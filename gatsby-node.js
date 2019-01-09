@@ -23,8 +23,9 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-    console.log(result.data.allMarkdownRemark.edges)
+    // console.log(result.data.allMarkdownRemark.edges)
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (!node.frontmatter.path) return
       createPage({
         path: node.frontmatter.path,
         component: pageTemplate,

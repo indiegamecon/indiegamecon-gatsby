@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Whyisbecause Gatsby Starter`,
+    title: `Indie Game Con 2019`,
     description: `Gatsby starter with markdownRemark and styled-components`,
     author: `@mckelveygreg`,
   },
+  pathPrefix: "/indiegamecon-gatsby",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
