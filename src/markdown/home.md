@@ -1,7 +1,7 @@
 ---
 title: "home"
 ---
-
+# Welcome!
 #### What is Indie Game Con?
 It’s tricky to market a game with no budget, and it’s difficult to labor in solitude on a passion project. But when strangers pick up the controller and start to laugh and smile, it all seems worth it. And when you meet fellow creators who understand the highs and lows of indie game development, you feel like you’ve found your tribe.
 
