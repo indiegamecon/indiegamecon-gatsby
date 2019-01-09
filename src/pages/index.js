@@ -41,7 +41,7 @@ axios
         }
       })
       .catch(error => {
-        this.setState({ loading: false, error });
+        console.log(error)
       });
 
 export default IndexPage

@@ -1,6 +1,8 @@
 import axios from "axios";
 
-require("dotenv").config();
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 export function handler(event, context, callback) {
   console.log(event);
@@ -16,7 +18,7 @@ export function handler(event, context, callback) {
       },
       data: {
         fields: {
-          "On Display?": data.fields["On Display?"]
+          "Name": data.fields["Name"]
         }
       }
     })
