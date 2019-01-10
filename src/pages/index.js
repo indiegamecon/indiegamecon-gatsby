@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import axios from 'axios' 
+import ContactForm from '../components/contactForm' 
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -9,6 +10,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Hi people</h1>
+    <ContactForm />
+    <hr />
     <StaticQuery
       query={graphql`
         {
@@ -27,21 +30,5 @@ const IndexPage = () => (
   </Layout>
 )
 
-axios
-      .patch("/.netlify/functions/api-proxy", {
-        params: {
-          url: `https://api.airtable.com/v0/${
-            process.env.REACT_APP_AIRTABLE_BASE_ID
-          }`
-        },
-        data: {
-          fields: {
-            "Name": "stan"
-          }
-        }
-      })
-      .catch(error => {
-        console.log(error)
-      });
 
 export default IndexPage
