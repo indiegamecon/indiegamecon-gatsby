@@ -3,7 +3,3 @@
   Command = "npm run build"
   Functions = "lambda"
   Publish = "public"
-
-[template.environment]
-  API_KEY = "Your secret Airtable API key"
-  REACT_APP_AIRTABLE_BASE_ID = "Your Airtable Base ID"
