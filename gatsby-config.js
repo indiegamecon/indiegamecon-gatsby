@@ -14,7 +14,7 @@ module.exports = {
   },
   siteMetadata: {
     title: `Indie Game Con 2019`,
-    description: `Gatsby starter with markdownRemark and styled-components`,
+    description: `Indie Game Con 2019, Eugene Oregon`,
     author: `@mckelveygreg`,
   },
   pathPrefix: "/indiegamecon-gatsby",
@@ -47,7 +47,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
