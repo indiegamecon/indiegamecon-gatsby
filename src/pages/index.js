@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import axios from 'axios' 
 import ContactForm from '../components/contactForm' 
 
 import Layout from '../components/layout'
