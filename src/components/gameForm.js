@@ -144,7 +144,7 @@ class ContactForm extends Component {
                 <p>
                   Now we need some information about the game you are submitting
                 </p>
-                <label htmlFor="name">Team Name</label>
+                <label htmlFor="teamName">Team Name</label>
                 <Field
                   className={
                     touched.teamName && errors.teamName ? 'invalid' : ''
