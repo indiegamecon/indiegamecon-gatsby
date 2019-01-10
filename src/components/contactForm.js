@@ -7,25 +7,26 @@ const ContactForm = () => (
       name: '',
       email: '',
       message: '',
+      formName: 'Contact',
     }}
     onSubmit={async (values, actions) => {
       console.log('Form submitted')
       console.log(values)
       console.log(actions)
 
-      const { name, email, message } = values
-      const data = {
-        name: name,
-        email: email,
-        message: message,
-      }
+      // const { name, email, message } = values
+      // const data = {
+      //   name: name,
+      //   email: email,
+      //   message: message,
+      // }
 
       const response = await (await fetch('/.netlify/functions/airtable', {
         method: 'PATCH',
         headers: {
           'Content-type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(values),
       })).json()
       console.log(response)
     }}
@@ -41,6 +42,7 @@ const ContactForm = () => (
       validate,
     }) => (
       <Form onSubmit={handleSubmit} onSubmitCapture={handleSubmit}>
+
         <label htmlFor="name">Full Name:</label>
         <Field
           className={touched.name && errors.name ? 'invalid' : ''}

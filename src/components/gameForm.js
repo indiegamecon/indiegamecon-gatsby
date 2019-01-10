@@ -63,12 +63,9 @@ class ContactForm extends Component {
       <div>
         {!this.state.formSubmitted ? (
           <Formik
-            // initialValues={{
-            //   name: '',
-            //   email: '',
-            //   phone: '',
-            //   message: '',
-            // }}
+            initialValues={{
+              formName: 'Games',
+            }}
             validationSchema={yup.object().shape({
               name: yup.string().required('IDENTIFY YOURSELF!'),
               email: yup

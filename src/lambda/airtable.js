@@ -1,7 +1,7 @@
 const Airtable = require('airtable')
 
 
-const saveContact = async ({name, email, message }) => {
+const saveContact = async (data) => {
   return new Promise  ((resolve, reject) => {
     const { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } = process.env
 
@@ -10,7 +10,7 @@ const saveContact = async ({name, email, message }) => {
     })
 
     const base = Airtable.base(AIRTABLE_BASE_ID)
-    base('Contact').create({ name, email, message }, err => {
+    base(data.formName).create(data, err => {
       if (err) return reject(err);
       resolve();
     })
