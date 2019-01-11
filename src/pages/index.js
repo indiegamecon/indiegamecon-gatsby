@@ -1,16 +1,15 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import ContactForm from '../components/contactForm' 
+import ContactForm from '../components/contactForm'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ReactSpringTest from '../components/reactSpringTest';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <ContactForm />
-    <hr />
+    <ReactSpringTest />
     <StaticQuery
       query={graphql`
         {
@@ -26,8 +25,9 @@ const IndexPage = () => (
         </>
       )}
     />
+    <h3>Have questions? Contact us!</h3>
+    <ContactForm />
   </Layout>
 )
-
 
 export default IndexPage
