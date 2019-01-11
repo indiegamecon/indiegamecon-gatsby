@@ -9,7 +9,6 @@ import ReactSpringTest from '../components/reactSpringTest';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <ReactSpringTest />
     <StaticQuery
       query={graphql`
         {
