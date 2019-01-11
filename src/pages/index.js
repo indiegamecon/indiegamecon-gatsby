@@ -4,7 +4,6 @@ import ContactForm from '../components/contactForm'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ReactSpringTest from '../components/reactSpringTest';
 
 const IndexPage = () => (
   <Layout>
