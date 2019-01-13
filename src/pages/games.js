@@ -5,6 +5,8 @@ import SEO from '../components/seo'
 import GameForm from '../components/gameForm'
 import { Transition, animated } from 'react-spring'
 import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby';
+import GameCards from '../components/gameCards' 
 
 const Button = styled.button`
   margin: 0 auto;
@@ -66,7 +68,30 @@ class Games extends Component {
             ))
           }
         </Transition>
-        Games are coming soon!
+        <hr />
+        <h2>Games that are signed up</h2>
+        <StaticQuery
+          query={graphql`
+          query {
+            games: allAirtable(filter: {table: {eq: "Games"}}) {
+              edges {
+                node {
+                  data {
+                    gameDescription
+                    teamMembers
+                    teamName
+                    gameName
+                  }
+                }
+              }
+            }
+          }
+          
+        `}
+          render={data => (
+            <GameCards games={data.games.edges} />
+          )}
+          />
       </Layout>
     )
   }
