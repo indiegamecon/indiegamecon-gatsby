@@ -1,0 +1,21 @@
+This will return only items from the Leadership table, etc
+Try it out in GraphiQL! http://localhost:8000/___graphql
+
+{
+	allAirtable(filter: {table: {eq: "Leadership"}}) {
+	  edges {
+	    node {
+	      id
+        table
+        data {
+        	Name
+          Skillz
+          Photo{
+            url
+          }
+          Portfolio
+        }
+	    }
+	  }
+	}
+}
