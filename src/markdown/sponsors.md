@@ -1,117 +1,43 @@
-# Sponsors
+---
+title: Sponsors
+---
 
-### Glimmer Technology
-http://www.glimmer.tech/
+# Sponsorship FAQ
 
-Injects animation and sound into the world, as seen through a mobile phone camera
-Relies on special images to trigger content
-Requires a free app, Glimmer XP, that is available on Apple and Android phones
-Combines traditional art forms and next-generation technology
+## Why should I sponsor Indie Game Con?
+An Indie Game Con sponsorship puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only can your sponsorship promote a service, a brand, or a product, it will boost our spending on advertising, and help continue Indie Game Con as an Oregon tradition.
 
-## Prospective Sponsors
+## What do you get?
+### Community Partner Sponsorship
+Partner logo cloud on t-shirt
+Contact us for how you can help!  **Make Contact Us a link to indiegamecon@gmail.com*
 
-### Travel Lane County
-https://www.eugenecascadescoast.org/members/about-us/
+### Supporting Level Sponsorship
+Medium logo placement on t-shirts
+Listing on all PR media, social media, etc.
+5 minute ad between panel setup
 
-Notes:
-They have sponsored us in 2014 and 2015.
+### Presenting Sponsorship
+Large logo placement on t-shirts
+Exhibit space
+Listing on all PR media, social media, etc.
+20 minute presentation (optional)
 
-Contacts:
-Juanita Metzler
-Convention Sales Manager
-Phone: 541.743.8758
-Email: Juanita@EugeneCascadesCoast.org
+### Title Sponsorship
+Listing on all PR media, Social media, etc.
+“Presented by [your name]” title sponsorship
+Prominent logo placement on t-shirts
+Exhibit space
+Listing on all PR media, social media, etc.
+Opening comments
 
-Linda Norris
-Convention Services Manager
-Phone: 541.743.8756
-Email: Linda@EugeneCascadesCoast.org
+## When is Indie Game Con?
+Indie Game Con will be happening Saturday & Sunday, November 9 & 10, 2019.
 
-### Intel
-https://www.intel.com/content/www/us/en/corporate-responsibility/intel-in-oregon.html
+## Who do I contact?
+David Lo, Mike Jones, Greg McKelvey, Andy Darnall
 
-Notes:
-Has sponsored us in 2014.
+## How do you sponsor?
+Indie Game Con is a Bitforest project. Bitforest is a fiscally-sponsored 501(c)3 nonprofit organization that instills an innovation culture in Oregon communities. If you would like to donate to Bitforest, make your check Payable to “Bitforest ℅ TAO Foundation” and note “Indie Game Con” in the memo. 
 
-Contacts:
-Customers who need to contact Intel headquarters can call 1-408-765-8080 to reach the operator. You will need to know the office you need to contact to help the operator direct your call. If you have no idea what department you need, explain your issue to the operator to help direct the call.
-https://www.intel.com/content/www/us/en/forms/corporate/corporate-questions-contact-us.html
-
-
-### Lane Community College (Game Development)
-https://www.lanecc.edu/cit/simulation-and-game-development
-
-Notes:
-They have sponsored us in 2014.
-
-Contacts:
-Andy will know more info!
-
-### RAIN EUGENE
-http://www.raineugene.org/
-
-Notes:
-They have sponsored us in 2014.
-
-Contacts:
-None, Joe Marushak stopped working there.
-
-### Oregon Story Board
-http://www.oregonstoryboard.org/
-
-Notes:
-They have sponsored us in 2014.
-
-Contacts:
-info@oregonstoryboard.org
-
-### Holiday Inn Express
-https://www.ihg.com/holidayinnexpress/hotels/us/en/springfield/sfieu/hoteldetail
-
-Notes:
-They have sponsored us in 2014.
-We may have gotten this sponsorship for keynote speaker hotel rooms.
-
-Contacts:
-(541) 342-1243
-
-### Oregon Video Game Association
-https://www.oregongames.org/
-
-Notes:
-They have sponsored us in 2015.
-
-Contacts:
-Website lists Will Lewis as a writer but there is no contact email.
-
-### Oregon Film
-https://oregonfilm.org/
-
-Notes:
-They have sponsored us in 2015.
-
-Contacts:
-Our office hours are generally 9am to 5pm (Monday-Friday). Please call to make an appt.
-(971) 254-4020
-
-### Portland Indie Game Squad
-https://pigsquad.com/
-
-Notes:
-They have sponsored us in 2015.
-This may be a great source for game contributors.
-
-Contacts:
-info@pigsquad.com
-
-### Pixel Arts Game Education
-https://www.gameeducationpdx.com/
-
-Notes:
-They have sponsored us in 2015.
-
-Contacts:
-https://www.gameeducationpdx.com/contact/
-
-
-
+If you do not need a 501(c)3 paper receipt, you can donate through our Eventbrite link: **insert bit.ly link*
