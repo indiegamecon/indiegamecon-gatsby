@@ -41,3 +41,25 @@ An Indie Game Con sponsorship puts you in front of hundreds of passionate game d
 Indie Game Con is a Bitforest project. Bitforest is a fiscally-sponsored 501(c)3 nonprofit organization that instills an innovation culture in Oregon communities. If you would like to donate to Bitforest, make your check Payable to “Bitforest ℅ TAO Foundation” and note “Indie Game Con” in the memo. 
 
 If you do not need a 501(c)3 paper receipt, you can donate through our Eventbrite link: **insert bit.ly link*
+
+___
+
+## Past Sponsors
+### Our partners in 2014 were:
+- Travel Lane County
+- Lane Community College (Game Development)
+- Intel
+- HP
+- RAIN
+- Oregon Story Board
+- Oreganik LLC (underwriter)
+- Holiday Inn Express
+- Vance Naegle
+
+### Our partners in 2015 were:
+- Travel Lane County
+- Oregon Video Game Association
+- Technology Association of Oregon
+- Oregon Film
+- Portland Indie Game Squad
+- Pixel Arts Game Education
