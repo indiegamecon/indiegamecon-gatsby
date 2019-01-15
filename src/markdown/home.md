@@ -33,7 +33,7 @@ An indie game, or independent video game, is a video game that is often created 
 ## How do I contribute?
 #### Join the conversation on the #indiegamecon2019 channel of the EugeneTech Slack http://eugslack.com
 
-#### Want to submit a game or check out submitted games? [Submit your game!](games.md)
+#### Want to submit a game or check out submitted games? [Submit your game!](/games)
 
 #### View Code of Conduct
 - Link to Code of Conduct, make into page not a link to a github page
