@@ -9,30 +9,30 @@ An Indie Game Con sponsorship puts you in front of hundreds of passionate game d
 
 ## What do you get?
 ### Community Partner Sponsorship
-Partner logo cloud on t-shirt
-[Contact us](indiegamecon@gmail.com) for how you can help!
+* Partner logo cloud on t-shirt
+* [Contact us](indiegamecon@gmail.com) for how you can help!
 
 ### Supporting Level Sponsorship
-Medium logo placement on t-shirts
-Listing on all PR media, social media, etc.
-5 minute ad between panel setup
+* Medium logo placement on t-shirts
+* Listing on all PR media, social media, etc.
+* 5 minute ad between panel setup
 
 ### Presenting Sponsorship
-Large logo placement on t-shirts
-Exhibit space
-Listing on all PR media, social media, etc.
-20 minute presentation (optional)
+* Large logo placement on t-shirts
+* Exhibit space
+* Listing on all PR media, social media, etc.
+* 20 minute presentation (optional)
 
 ### Title Sponsorship
-Listing on all PR media, Social media, etc.
-“Presented by [your name]” title sponsorship
-Prominent logo placement on t-shirts
-Exhibit space
-Listing on all PR media, social media, etc.
-Opening comments
+* Listing on all PR media, Social media, etc.
+* “Presented by [your name]” title sponsorship
+* Prominent logo placement on t-shirts
+* Exhibit space
+* Listing on all PR media, social media, etc.
+* Opening comments
 
 ## When is Indie Game Con?
-Indie Game Con will be happening Saturday & Sunday, November 9 & 10, 2019.
+* Indie Game Con will be happening Saturday & Sunday, November 9 & 10, 2019.
 
 ## Who do I contact?
 David Lo, Mike Jones, Greg McKelvey, Andy Darnall
