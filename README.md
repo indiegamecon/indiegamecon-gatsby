@@ -1,6 +1,8 @@
 # Indie Game Con Website
 [![Build Status](https://travis-ci.com/mckelveygreg/indiegamecon-gatsby.svg?branch=master)](https://travis-ci.com/mckelveygreg/indiegamecon-gatsby)
 
+## [Live Site](https://indiegamecon.netlify.com)
+
 ## Build Instructions
 ### Environment set up
 1. `npm install`
