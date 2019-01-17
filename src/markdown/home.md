@@ -12,9 +12,9 @@ That’s why Indie Game Con exists: to put creator-owned games in front of mains
 <p align="center">
 IGC has been an annual event in Eugene, Oregon since 2013, and is run by Bitforest, a non-profit organization sponsored by Innovate Oregon. Run by volunteer tech and game dev professionals, it’s an expression of the inclusive game community in Eugene and beyond.
 </p>
-<p align="center">
+
 #### Signup as a Contributor, Volunteer, or Buy a Ticket on [Eventbrite](https://www.eventbrite.com/e/indie-game-con-2019-tickets-54520160267) or Facebook
-</p>
+
 ---
 
 ### What kind of things will be at Indie Game Con?
