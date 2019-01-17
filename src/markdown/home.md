@@ -39,6 +39,8 @@ An indie game, or independent video game, is a video game that is often created 
 * Students
 * Kids (who are the best game testers)!
 
+---
+
 ### Where and When
 *  Saturday & Sunday, November 9 & 10
 *  Venue TBD +  Map
