@@ -35,7 +35,7 @@ An Indie Game Con sponsorship puts you in front of hundreds of passionate game d
 * Indie Game Con will be happening Saturday & Sunday, November 9 & 10, 2019.
 
 ## Who do I contact?
-[David Lo](pramslam@gmail.com), Mike Jones, Greg McKelvey, Andy Darnall
+indiegamecon@gmail.com
 
 ## How do you sponsor?
 Indie Game Con is a Bitforest project. Bitforest is a fiscally-sponsored 501(c)3 nonprofit organization that instills an innovation culture in Oregon communities. If you would like to donate to Bitforest, make your check Payable to “Bitforest ℅ TAO Foundation” and note “Indie Game Con” in the memo. 
