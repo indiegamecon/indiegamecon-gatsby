@@ -33,7 +33,11 @@ IGC has been an annual event in Eugene, Oregon since 2013, and is run by Bitfore
 An indie game, or independent video game, is a video game that is often created without the financial support of a publisher. Indie games often focus on innovation and rely on digital distribution.
 
 ### Who should come to Indie Game Con?
-* Game Developers, Tech Savvy Enthusiasts, Gamers, Students, and Kids (who are the best game testers)!
+* Game Developers
+* Tech Savvy Enthusiasts
+* Gamers
+* Students
+* Kids (who are the best game testers)!
 
 ### Where and When
 *  Saturday & Sunday, November 9 & 10
