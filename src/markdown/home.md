@@ -1,8 +1,13 @@
 ---
 title: "home"
 ---
-# Welcome
 ## What is Indie Game Con?
+<p align="center">
+Welcome to the Indie Game Con web page! 🎉 We’re glad you’re here!
+</p>
+<p align="center">
+<img src="https://github.com/mckelveygreg/indiegamecon-gatsby/blob/master/src/images/favicon.png">
+</p>
 <p align="center">
 It’s tricky to market a game with no budget, and it’s difficult to labor in solitude on a passion project. But when strangers pick up the controller and start to laugh and smile, it all seems worth it. And when you meet fellow creators who understand the highs and lows of indie game development, you feel like you’ve found your tribe.
 </p>
