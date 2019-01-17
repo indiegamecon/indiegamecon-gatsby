@@ -8,18 +8,16 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.div`
   /* position: absolute; */
-  z-index: -5;
-  top: 0;
-  width: 100%;
+  padding: 10px;
   background: #2e3192;
-  background-size: cover;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: row;
+  justify-content: space-around;
+
   &:first-child div {
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
   }
 `
@@ -29,18 +27,20 @@ const Logo = styled.img`
 
 const StyledShip = styled.img`
   width: 300px;
+  margin-left: auto;
+  margin-right: 10px;
 `
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <div>
       <Link to="/">
         <Logo src={logo} />
         {/* {siteTitle} */}
       </Link>
+    <div>
       <Navbar />
-    </div>
     <StyledShip src={spaceship} />
+    </div>
   </StyledHeader>
 )
 
