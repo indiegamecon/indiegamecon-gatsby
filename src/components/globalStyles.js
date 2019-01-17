@@ -21,6 +21,29 @@ body {
 h1, h2, h3 {
   font-family: 'Bungee', cursive;
 }
+
+/* .gatsby-resp-iframe-wrapper {
+  max-width: 400px;
+  height: 300px;
+} */
+
+/* .embedVideo-iframe {
+  max-width: 500px;
+  max-height: 300px;
+
+} */
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+}
 `
 
 export default GlobalStyle

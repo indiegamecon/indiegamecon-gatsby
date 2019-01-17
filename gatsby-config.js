@@ -1,17 +1,17 @@
-var proxy = require("http-proxy-middleware")
+var proxy = require('http-proxy-middleware')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
-    developMiddleware: app => {
+  developMiddleware: app => {
     app.use(
-      "/.netlify/functions/",
+      '/.netlify/functions/',
       proxy({
-        target: "http://localhost:9000",
+        target: 'http://localhost:9000',
         pathRewrite: {
-          "/.netlify/functions/": "",
+          '/.netlify/functions/': '',
         },
       })
     )
@@ -21,7 +21,7 @@ module.exports = {
     description: `Indie Game Con 2019, Eugene Oregon`,
     author: `@mckelveygreg`,
   },
-  pathPrefix: "/indiegamecon-gatsby",
+  pathPrefix: '/indiegamecon-gatsby',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/markdown`,
-        name: "markdown-pages",
+        name: 'markdown-pages',
       },
     },
     {
@@ -70,7 +70,24 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          // {
+          //   resolve: 'gatsby-remark-embed-video',
+          //   options: {
+          //     width: 400,
+          //     // ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+          //     // height: 400, // Optional: Overrides optional.ratio
+          //     related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+          //     noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+          //   },
+          // },
+          // 'gatsby-remark-responsive-iframe',
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -92,5 +109,4 @@ module.exports = {
   ],
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-
 }
