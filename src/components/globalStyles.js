@@ -44,20 +44,17 @@ button {
   font-size: 1.2rem;
 }
 
-/* .gatsby-resp-iframe-wrapper {
-  max-width: 400px;
-  height: 300px;
-} */
-
-/* .embedVideo-iframe {
-  max-width: 500px;
-  max-height: 300px;
-
-} */
 iframe {
   margin: 0 auto;
   display: block;
 }
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 750px) {
   html {
     font-size: 100%;
