@@ -23,13 +23,17 @@ const StyledHeader = styled.header`
   }
 `
 const Logo = styled.img`
-  width: 200px;
+  width: 100%;
 `
 
 const StyledShip = styled.img`
   width: 300px;
   margin-left: auto;
   margin-right: 10px;
+  @media only screen and (max-width: 750px) {
+    display: none;
+
+}
 `
 
 const Header = ({ siteTitle }) => (

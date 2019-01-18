@@ -53,6 +53,23 @@ const StyledForm = styled(Form)`
       background-color: #aaa;
     }
   }
+  @media screen and (max-width: 750px) {
+    padding: 0 0 20px 0;
+    grid-template: auto / 1fr;
+
+    input {
+      width: auto;
+    }
+    h3 {
+      font-size: 1.1rem; 
+    }
+    label,
+    textarea,
+    input,
+    button, p, legend {
+      font-size: 1rem;
+    }
+  }
 `
 
 class GameForm extends Component {

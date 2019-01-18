@@ -4,7 +4,7 @@ title: 'home'
 
 # Presented By...
 
-<img src ="http://www.bitforest.co/bitforest.png" />
+![Bit Forest Logo](bitforest.png)
 
 # [What is Indie Game Con?]{.center}
 

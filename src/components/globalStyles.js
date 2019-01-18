@@ -57,11 +57,12 @@ iframe {
 
 @media only screen and (max-width: 750px) {
   html {
-    font-size: 100%;
+    font-size: 80%;
   }
   iframe {
     width: 100%;
   }
+
 }
 `
 

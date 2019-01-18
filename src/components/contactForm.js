@@ -47,6 +47,17 @@ const StyledForm = styled(Form)`
       background-color: #aaa;
     }
   }
+  @media screen and (max-width: 750px) {
+    padding: 0 0 20px 0;
+
+    label,
+    textarea,
+    input,
+    button {
+      font-size: 1rem;
+      width: 100%;
+    }
+  }
 `
 
 class ContactForm extends Component {
