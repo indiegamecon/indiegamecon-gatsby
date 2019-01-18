@@ -8,13 +8,13 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.header`
   /* position: absolute; */
-  padding: 10px;
+  padding: 2rem;
   background: #2e3192;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1rem dashed #fff200 ;
-
+  outline: 1rem dashed #fff200 ;
+  outline-offset: -1.7rem;
   &:first-child div {
     
     display: flex;
