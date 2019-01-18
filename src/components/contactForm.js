@@ -7,7 +7,7 @@ import { Transition, animated } from 'react-spring'
 
 const StyledForm = styled(Form)`
   display: grid;
-  grid-template-columns: auto 3fr;
+  grid-template-columns: auto 2fr;
   grid-gap: 10px;
   padding: 2rem;
 
@@ -19,10 +19,12 @@ const StyledForm = styled(Form)`
   }
   label {
     text-align: right;
+    font-size: 1.5rem;
   }
   input {
     width: 250px;
     border-radius: 5px;
+    font-size: 1.5rem;
   }
   fieldset input {
     width: 40px;
