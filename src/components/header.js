@@ -6,13 +6,14 @@ import spaceship from '../images/IndieGameCon_spaceship.svg'
 import logo from '../images/IGC White Logo Stroke Only.svg'
 import styled from 'styled-components'
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   /* position: absolute; */
   padding: 10px;
   background: #2e3192;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: 1rem dashed #fff200 ;
 
   &:first-child div {
     

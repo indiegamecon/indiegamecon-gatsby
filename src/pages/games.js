@@ -9,7 +9,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import GameCards from '../components/gameCards' 
 
 const Button = styled.button`
-  margin: 0 auto;
+  margin: 10px auto;
   display: inherit;
   width: 250px;
   grid-column: 2 / 3;
@@ -50,7 +50,7 @@ class Games extends Component {
     return (
       <Layout>
         <SEO title="Games" />
-        <Button onClick={this.handleToggle}>
+        <Button onClick={this.handleToggle} style={{fontSize: "1rem"}}>
           Click Here to Sign Up Your Team!
         </Button>
         <Transition

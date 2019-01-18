@@ -6,7 +6,7 @@ const ListLink = props => (
     <Link
       to={props.to}
       activeStyle={{ background: '#2b2b2b', color: 'white' }}
-      style={{ color: '#2b2b2b', textDecoration: 'none' }}
+      style={{ color: 'white', textDecoration: 'none' }}
     >
       {props.children}
     </Link>

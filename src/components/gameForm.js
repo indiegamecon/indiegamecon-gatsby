@@ -6,28 +6,36 @@ import { Transition, animated } from 'react-spring'
 
 const StyledForm = styled(Form)`
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 10px;
   padding: 2rem;
 
+  p {
+    background: #2b2b2b55;
+    align-self: center;
+    padding: 10px;
+  }
+
   textarea {
-    height: 100px;
+    height: 150px;
     border-radius: 5px;
     font-family: inherit;
     font-weight: bold;
   }
-  label {
+  label, legend {
     text-align: right;
+    font-size: 1.5rem;
   }
   input {
-    width: 250px;
+    width: 300px;
     border-radius: 5px;
+    font-size: 1.5rem;
   }
   fieldset input {
     width: 40px;
   }
   .invalid {
-    background: #ff000055;
+    background: #ff000077;
   }
   button {
     margin: 0 auto;
