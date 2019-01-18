@@ -25,7 +25,7 @@ An Indie Game Con sponsorship puts you in front of hundreds of passionate game d
 
 ### Title Sponsorship
 * Listing on all PR media, Social media, etc.
-* “Presented by [your name]” title sponsorship
+* “Presented by -your name-” title sponsorship  <!-- With a new plugin, you can't use brackets anymore... -->
 * Prominent logo placement on t-shirts
 * Exhibit space
 * Listing on all PR media, social media, etc.
