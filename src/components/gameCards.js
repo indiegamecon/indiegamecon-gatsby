@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export default class GameCards extends Component {
   render() {
     const games = this.props.games
-    console.log(games)
     return (
       <div>
         {games.map(({node: { data }}) => (
