@@ -5,6 +5,9 @@ import Navbar from './navbar'
 import spaceship from '../images/IndieGameCon_spaceship.svg'
 import logo from '../images/IGC White Logo Stroke Only.svg'
 import styled from 'styled-components'
+import HamburgerButton from './hamburgerButton'
+
+
 
 const StyledHeader = styled.header`
   /* position: absolute; */
@@ -34,14 +37,14 @@ const StyledShip = styled.img`
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <StyledHeader>
     <Link to="/">
       <Logo src={logo} />
-      {/* {siteTitle} */}
     </Link>
     <div>
       <Navbar />
+      <HamburgerButton />
       <StyledShip src={spaceship} />
     </div>
   </StyledHeader>
