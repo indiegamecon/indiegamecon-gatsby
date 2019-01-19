@@ -14,7 +14,8 @@ html {
 body {
   margin: 0 auto;
   max-width: 1000px;
-  background: #fff;
+  background: #ffffffee;
+  box-shadow: 5px 5px 5px #000000aa;
 }
 
 h1, h2, h3 {

@@ -10,13 +10,12 @@ const StyledHeader = styled.header`
   /* position: absolute; */
   padding: 2rem;
   background: #2e3192;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   justify-content: space-around;
-  outline: 1rem dashed #fff200 ;
+  outline: 1rem dashed #fff200;
   outline-offset: -1.7rem;
   &:first-child div {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,19 +31,18 @@ const StyledShip = styled.img`
   margin-right: 10px;
   @media only screen and (max-width: 750px) {
     display: none;
-
-}
+  }
 `
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-      <Link to="/">
-        <Logo src={logo} />
-        {/* {siteTitle} */}
-      </Link>
+    <Link to="/">
+      <Logo src={logo} />
+      {/* {siteTitle} */}
+    </Link>
     <div>
       <Navbar />
-    <StyledShip src={spaceship} />
+      <StyledShip src={spaceship} />
     </div>
   </StyledHeader>
 )
