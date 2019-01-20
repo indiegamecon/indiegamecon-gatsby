@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import GlobalStyle from './globalStyles';
+import Starfield from './starfield';
 //import './layout.css'
 
 const Layout = ({ children }) => (
@@ -20,6 +21,8 @@ const Layout = ({ children }) => (
     render={data => (
       <>
       <GlobalStyle />
+      <Starfield />
+      
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{

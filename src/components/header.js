@@ -7,7 +7,6 @@ import logo from '../images/IGC White Logo Stroke Only.svg'
 import styled from 'styled-components'
 
 const StyledHeader = styled.header`
-  /* position: absolute; */
   padding: 2rem;
   background: #2e3192;
   display: grid;
@@ -15,7 +14,7 @@ const StyledHeader = styled.header`
   justify-content: space-around;
   outline: 1rem dashed #fff200;
   outline-offset: -1.7rem;
-  &:first-child div {
+   div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
