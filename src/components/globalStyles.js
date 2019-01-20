@@ -14,7 +14,7 @@ html {
 body {
   margin: 0 auto;
   max-width: 1000px;
-  background: #ffffffee;
+  background: #ffffffaf;
   box-shadow: 5px 5px 5px #000000aa;
 }
 
@@ -58,7 +58,7 @@ iframe {
 
 @media only screen and (max-width: 750px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
   iframe {
     width: 100%;

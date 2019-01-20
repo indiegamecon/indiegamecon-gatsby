@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   justify-content: space-around;
   outline: 1rem dashed #fff200;
   outline-offset: -1.7rem;
-   div {
+  div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -25,11 +25,22 @@ const Logo = styled.img`
 `
 
 const StyledShip = styled.img`
-  width: 300px;
-  margin-left: auto;
-  margin-right: 10px;
+  width: 200px;
+  transform: rotate(180deg);
+ 
   @media only screen and (max-width: 750px) {
     display: none;
+  }
+`
+
+const Lazer = styled.div`
+  
+  min-width: 50%;
+  height: 10px;
+  background: #ed1c24;
+
+  @media only screen and (max-width: 750px) {
+    opacity: 0;
   }
 `
 
@@ -41,7 +52,10 @@ const Header = ({ siteTitle }) => (
     </Link>
     <div>
       <Navbar />
-      <StyledShip src={spaceship} />
+    <div style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
+        <Lazer />
+        <StyledShip src={spaceship} />
+    </div>
     </div>
   </StyledHeader>
 )
