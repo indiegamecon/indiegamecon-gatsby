@@ -5,7 +5,7 @@ const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: '1rem' }}>
     <Link
       to={props.to}
-      activeStyle={{ background: '#2b2b2b', color: 'white' }}
+      activeStyle={{ background: '#231f20dd', color: 'white' }}
       style={{ color: 'white', textDecoration: 'none' }}
     >
       {props.children}

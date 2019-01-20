@@ -5,15 +5,18 @@ import Navbar from './navbar'
 import spaceship from '../images/IndieGameCon_spaceship.svg'
 import logo from '../images/IGC White Logo Stroke Only.svg'
 import styled from 'styled-components'
+import { elevation } from '../utilities'
 
 const StyledHeader = styled.header`
-  padding: 2rem;
+  padding: 2rem 10%;
   background: #2e3192;
   display: grid;
   grid-template-columns: 1fr 4fr;
   justify-content: space-around;
   outline: 1rem dashed #fff200;
   outline-offset: -1.7rem;
+  width: 100%;
+  ${elevation[2]};
   div {
     display: flex;
     flex-direction: column;
