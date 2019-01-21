@@ -3,6 +3,9 @@ title: media
 ---
 # Various Media!
 
+### YOUTUBE
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cOagQX87SCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### LETTERS OF SUPPORT
 
 I came to Oregon almost eight years ago to work for a game studio and I'm glad that I did. I love Oregon and Eugene. In that time I help build a local studio, that went on to be purchased by Disney and provided high paying jobs for close to fifty people in Eugene, and attracted top talent to relocate here from out of state. All of whom in turn contributed greatly to the local economy. 
