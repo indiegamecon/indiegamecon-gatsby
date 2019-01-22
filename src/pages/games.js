@@ -5,8 +5,8 @@ import SEO from '../components/seo'
 import GameForm from '../components/gameForm'
 import { Transition, animated } from 'react-spring'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby';
-import GameCards from '../components/gameCards' 
+import { StaticQuery, graphql } from 'gatsby'
+import GameCards from '../components/gameCards'
 
 const Button = styled.button`
   margin: 10px auto;
@@ -48,32 +48,13 @@ class Games extends Component {
 
   render() {
     return (
-      <Layout>
-        <SEO title="Games" />
-        <Button onClick={this.handleToggle} style={{fontSize: "1rem"}}>
-          Click Here to Sign Up Your Team!
-        </Button>
-        <Transition
-          items={this.state.toggleForm}
-          from={{ opacity: 0 }}
-          enter={{ opacity: 1 }}
-          leave={{ opacity: 0 }}
-        >
-          {toggle =>
-            toggle &&
-            (styles => (
-              <animated.div style={styles}>
-                <GameForm />
-              </animated.div>
-            ))
-          }
-        </Transition>
-        <hr />
-        <h2>Games that are signed up</h2>
-        <StaticQuery
-          query={graphql`
+      <StaticQuery
+        query={graphql`
           query {
-            games: allAirtable(filter: {table: {eq: "Games"}}) {
+            rules: markdownRemark(frontmatter: { title: { eq: "games" } }) {
+              html
+            }
+            games: allAirtable(filter: { table: { eq: "Games" } }) {
               edges {
                 node {
                   data {
@@ -86,13 +67,39 @@ class Games extends Component {
               }
             }
           }
-          
         `}
-          render={data => (
+        render={data => (
+          <Layout>
+            <SEO title="Games" />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.rules.html,
+              }}
+            />
+            <Button onClick={this.handleToggle} style={{ fontSize: '1rem' }}>
+              Click Here to Sign Up Your Team!
+            </Button>
+            <Transition
+              items={this.state.toggleForm}
+              from={{ opacity: 0 }}
+              enter={{ opacity: 1 }}
+              leave={{ opacity: 0 }}
+            >
+              {toggle =>
+                toggle &&
+                (styles => (
+                  <animated.div style={styles}>
+                    <GameForm />
+                  </animated.div>
+                ))
+              }
+            </Transition>
+            <hr />
+            <h2>Games that are signed up</h2>
             <GameCards games={data.games.edges} />
-          )}
-          />
-      </Layout>
+          </Layout>
+        )}
+      />
     )
   }
 }
