@@ -15,16 +15,14 @@ const ListLink = props => (
 )
 
 const StyledNavbar = styled.nav`
-
   @media only screen and (max-width: 750px) {
     font-size: 150%;
     ul {
-
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
+      display: flex;
+      flex-direction: column;
+      text-align: right;
     }
+  }
 `
 const Navbar = ({ children }) => (
   <StyledNavbar>

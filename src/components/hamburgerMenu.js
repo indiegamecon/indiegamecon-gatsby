@@ -54,12 +54,13 @@ const StyledHamburgerMenu = styled(HamburgerMenu)`
     color: white;
     cursor: pointer;
     -webkit-tap-highlight-color: #00000000;
-    &:focus, :hover, :active {
+    &:focus,
+    :hover,
+    :active {
       outline: none;
       background: none;
     }
   }
-
 `
 
 export default StyledHamburgerMenu
