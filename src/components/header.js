@@ -5,9 +5,7 @@ import Navbar from './navbar'
 import spaceship from '../images/IndieGameCon_spaceship.svg'
 import logo from '../images/IGC White Logo Stroke Only.svg'
 import styled from 'styled-components'
-import HamburgerButton from './hamburgerButton'
-
-
+import HamburgerButton from './hamburgerMenu'
 
 const StyledHeader = styled.header`
   /* position: absolute; */
@@ -33,7 +31,8 @@ const StyledShip = styled.img`
   margin-left: auto;
   margin-right: 10px;
   @media only screen and (max-width: 750px) {
-    display: none;
+    /* display: none; */
+    width:50%;
   }
 `
 
@@ -43,8 +42,9 @@ const Header = () => (
       <Logo src={logo} />
     </Link>
     <div>
-      <Navbar />
+      {window.innerWidth > 750 ? <Navbar /> : 
       <HamburgerButton />
+    }
       <StyledShip src={spaceship} />
     </div>
   </StyledHeader>

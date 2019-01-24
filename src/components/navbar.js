@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import HamburgerButton from './hamburgerButton'
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: '1rem' }}>
@@ -16,9 +15,16 @@ const ListLink = props => (
 )
 
 const StyledNavbar = styled.nav`
+
   @media only screen and (max-width: 750px) {
-    display: none;
+    font-size: 150%;
+    ul {
+
+    display: flex;
+    flex-direction: column;
+    text-align: right;
   }
+    }
 `
 const Navbar = ({ children }) => (
   <StyledNavbar>
