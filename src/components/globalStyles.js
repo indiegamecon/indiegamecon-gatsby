@@ -20,6 +20,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Bungee', cursive;
+  padding-left: 1.3rem;
 }
 
 h1 {
@@ -34,11 +35,23 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.3rem;
+}
+
 
 p {
   font-size: 1.2rem;
+  overflow-wrap: break-word;
+  padding: 1.2rem;
 }
 
+ul, ol, li {
+  margin-left: 1rem;
+} 
 
 button {
   font-family: 'Roboto Mono', monospace;
@@ -58,8 +71,12 @@ iframe {
 
 @media only screen and (max-width: 750px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
+  h1, h2, h3, p, ul, li {
+  padding-left: 0;
+}
+
   iframe {
     width: 100%;
   }
