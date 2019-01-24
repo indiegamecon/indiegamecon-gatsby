@@ -42,7 +42,7 @@ const StyledShip = styled.img`
 `
 
 
-const Header = () => (
+
 const Lazer = styled.div`
   
   min-width: 50%;
@@ -65,7 +65,6 @@ const Header = ({ siteTitle }) => (
       {window.innerWidth > 750 ? <Navbar /> : 
       <HamburgerButton />
     }
-      <StyledShip src={spaceship} />
     <div style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
         <Lazer />
         <StyledShip src={spaceship} />
