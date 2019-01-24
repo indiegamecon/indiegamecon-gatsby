@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { Component } from 'react'
 import Navbar from './navbar'
 import spaceship from '../images/IndieGameCon_spaceship.svg'
 import logo from '../images/IGC White Logo Stroke Only.svg'
@@ -54,32 +54,57 @@ const Lazer = styled.div`
   }
 `
 
-const Header = ({ siteTitle }) => (
+class Header extends Component {
+  
+  
+  
+  state = {
+    innerWidth: window.innerWidth,
+  }
 
-  <StyledHeader>
-    <Link to="/">
-      <Logo src={logo} />
-    </Link>
-    <div>
 
-      {window.innerWidth > 750 ? <Navbar /> : 
-      <HamburgerButton />
-    }
-    <div style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
-        <Lazer />
-        <StyledShip src={spaceship} />
-    </div>
+  handleResize = (e) => (
+    this.setState({innerWidth: window.innerWidth})
+  )
 
-    </div>
+  componentDidMount () {
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
+
+  render() {
+    return (
+
+      <StyledHeader>
+  <Link to="/">
+  <Logo src={logo} />
+  </Link>
+  <div>
+  
+  {this.state.innerWidth > 750 ? <Navbar /> : 
+    <HamburgerButton />
+  }
+  <div style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
+  <Lazer />
+  <StyledShip src={spaceship} />
+  </div>
+  
+  </div>
   </StyledHeader>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+      )
+    }
+  
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
+  
+  Header.propTypes = {
+    siteTitle: PropTypes.string,
+  }
+  
+  Header.defaultProps = {
+    siteTitle: ``,
 }
 
 export default Header
