@@ -6,8 +6,7 @@ import SEO from '../components/seo'
 
 const Schedule = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
+    <SEO title="Schedule" keywords={[`gatsby`, `application`, `react`]} />
     <StaticQuery
       query={graphql`
         {

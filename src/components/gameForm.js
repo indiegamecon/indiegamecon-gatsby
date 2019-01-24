@@ -78,13 +78,6 @@ class GameForm extends Component {
   }
 
   render() {
-    // function validateFile(value) {
-    //   let error
-    //   if (value === undefined) {
-    //     error = 'No file!'
-    //   }
-    //   return error
-    // }
     return (
       <div>
         <Transition
@@ -186,7 +179,7 @@ class GameForm extends Component {
                             Now we need some information about the game you are
                             submitting
                           </p>
-                          <label htmlFor="teamName">Team Name</label>
+                          <label htmlFor="teamName">Team Name:</label>
                           <Field
                             className={
                               touched.teamName && errors.teamName
@@ -208,7 +201,7 @@ class GameForm extends Component {
                             type="text"
                             name="teamMembers"
                           />
-                          <label htmlFor="gameName">Game Name</label>
+                          <label htmlFor="gameName">Game Name:</label>
                           <Field
                             className={
                               touched.gameName && errors.gameName
@@ -247,33 +240,7 @@ class GameForm extends Component {
                             type="text"
                             name="gameLink"
                           />
-                          <legend>What days will you attend?</legend>
-                          <fieldset>
-                            <div>
-                              <Field
-                                className={
-                                  touched.day1 && errors.day1 ? 'invalid' : ''
-                                }
-                                id="day1"
-                                type="checkbox"
-                                value="day1"
-                                name="day1"
-                              />
-                              <label htmlFor="day1">Day 1</label>
-                            </div>
-                            <div>
-                              <Field
-                                className={
-                                  touched.day2 && errors.day2 ? 'invalid' : ''
-                                }
-                                id="day2"
-                                type="checkbox"
-                                value="day2"
-                                name="day2"
-                              />
-                              <label htmlFor="day2">Day 2</label>
-                            </div>
-                          </fieldset>
+                         
                           {/* <legend>Dietary Restrictions:</legend> */}
                           {/* Dietary Restrictions Radio Buttons */}
                           <label htmlFor="excited">

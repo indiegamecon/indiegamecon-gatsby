@@ -5,18 +5,23 @@ import Navbar from './navbar'
 import spaceship from '../images/IndieGameCon_spaceship.svg'
 import logo from '../images/IGC White Logo Stroke Only.svg'
 import styled from 'styled-components'
+
 import HamburgerButton from './hamburgerMenu'
 
+import { elevation } from '../utilities'
+
+
 const StyledHeader = styled.header`
-  /* position: absolute; */
-  padding: 2rem;
+  padding: 2rem 10%;
   background: #2e3192;
   display: grid;
   grid-template-columns: 1fr 4fr;
   justify-content: space-around;
   outline: 1rem dashed #fff200;
   outline-offset: -1.7rem;
-  &:first-child div {
+  width: 100%;
+  ${elevation[2]};
+  div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -27,25 +32,45 @@ const Logo = styled.img`
 `
 
 const StyledShip = styled.img`
-  width: 300px;
-  margin-left: auto;
-  margin-right: 10px;
+  width: 200px;
+  transform: rotate(180deg);
+ 
   @media only screen and (max-width: 750px) {
     /* display: none; */
     width:50%;
   }
 `
 
+
 const Header = () => (
+const Lazer = styled.div`
+  
+  min-width: 50%;
+  height: 10px;
+  background: #ed1c24;
+
+  @media only screen and (max-width: 750px) {
+    opacity: 0;
+  }
+`
+
+const Header = ({ siteTitle }) => (
+
   <StyledHeader>
     <Link to="/">
       <Logo src={logo} />
     </Link>
     <div>
+
       {window.innerWidth > 750 ? <Navbar /> : 
       <HamburgerButton />
     }
       <StyledShip src={spaceship} />
+    <div style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
+        <Lazer />
+        <StyledShip src={spaceship} />
+    </div>
+
     </div>
   </StyledHeader>
 )
