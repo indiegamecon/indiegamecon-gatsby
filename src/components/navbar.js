@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: '1rem' }}>
@@ -13,8 +14,18 @@ const ListLink = props => (
   </li>
 )
 
+const StyledNavbar = styled.nav`
+  @media only screen and (max-width: 750px) {
+    font-size: 150%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+  }
+`
 const Navbar = ({ children }) => (
-  <div>
+  <StyledNavbar>
     <ul style={{ listStyle: `none`, margin: 'auto' }}>
       <ListLink to="/">Home</ListLink>
       <ListLink to="/developers">Developers</ListLink>
@@ -24,13 +35,7 @@ const Navbar = ({ children }) => (
       <ListLink to="/media">Media</ListLink>
       <ListLink to="/about">About</ListLink>
     </ul>
-  </div>
+  </StyledNavbar>
 )
 
 export default Navbar
-
-// style={{
-//   margin: 'auto',
-//   display: 'flex',
-//   justifyContent: 'space-around',
-// }}
