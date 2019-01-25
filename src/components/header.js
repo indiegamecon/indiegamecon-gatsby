@@ -20,6 +20,7 @@ const StyledHeader = styled.header`
   outline: 1rem dashed #fff200;
   outline-offset: -1.7rem;
   width: 100%;
+  transition: .2s;
   ${elevation[2]};
   div {
     display: flex;
@@ -35,16 +36,27 @@ const StyledHeader = styled.header`
       text-align: center;
       grid-template-columns: 5fr 1fr;
       align-content: center;
+      @media only screen and (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
     `}
 `
 
 const Bitforest = styled.img`
   width: 400px;
   margin: 0 auto;
+  @media only screen and (max-width: 750px) {
+    width: 90%;
+  }
 `
 
 const Logo = styled.img`
   width: 100%;
+  @media only screen and (max-width: 750px) {
+    
+  }
 `
 
 const StyledShip = styled.img`
@@ -52,8 +64,8 @@ const StyledShip = styled.img`
   transform: rotate(180deg);
 
   @media only screen and (max-width: 750px) {
-    /* display: none; */
-    width: 50%;
+    /* width: 50%; */
+    display: none;
   }
 `
 
