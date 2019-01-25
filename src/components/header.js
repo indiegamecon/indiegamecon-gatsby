@@ -10,7 +10,6 @@ import HamburgerButton from './hamburgerMenu'
 
 import { elevation } from '../utilities'
 
-
 const StyledHeader = styled.header`
   padding: 2rem 10%;
   background: #2e3192;
@@ -34,17 +33,14 @@ const Logo = styled.img`
 const StyledShip = styled.img`
   width: 200px;
   transform: rotate(180deg);
- 
+
   @media only screen and (max-width: 750px) {
     /* display: none; */
-    width:50%;
+    width: 50%;
   }
 `
 
-
-
 const Lazer = styled.div`
-  
   min-width: 50%;
   height: 10px;
   background: #ed1c24;
@@ -55,56 +51,52 @@ const Lazer = styled.div`
 `
 
 class Header extends Component {
-  
-  
-  
   state = {
-    innerWidth: window.innerWidth,
+    headerWidth: 0,
   }
 
+  handleResize = element =>
+    this.setState({ headerWidth: element.getBoundingClientRect(element).width })
 
-  handleResize = (e) => (
-    this.setState({innerWidth: window.innerWidth})
-  )
-
-  componentDidMount () {
-    window.addEventListener('resize', this.handleResize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize)
+  refCallback = element => {
+    if (element) {
+      this.elementRef = element
+      this.setState({
+        headerWidth: element.getBoundingClientRect(element).width,
+      })
+    }
   }
 
   render() {
     return (
-
-      <StyledHeader>
-  <Link to="/">
-  <Logo src={logo} />
-  </Link>
-  <div>
-  
-  {this.state.innerWidth > 750 ? <Navbar /> : 
-    <HamburgerButton />
+      <StyledHeader ref={this.refCallback}>
+        <Link to="/">
+          <Logo src={logo} />
+        </Link>
+        <div>
+          {this.state.headerWidth > 733 ? <Navbar /> : <HamburgerButton />}
+          <div
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'flex-end',
+            }}
+          >
+            <Lazer />
+            <StyledShip src={spaceship} />
+          </div>
+        </div>
+      </StyledHeader>
+    )
   }
-  <div style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end'}}>
-  <Lazer />
-  <StyledShip src={spaceship} />
-  </div>
-  
-  </div>
-  </StyledHeader>
-      )
-    }
-  
 }
-  
-  Header.propTypes = {
-    siteTitle: PropTypes.string,
-  }
-  
-  Header.defaultProps = {
-    siteTitle: ``,
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: ``,
 }
 
 export default Header
