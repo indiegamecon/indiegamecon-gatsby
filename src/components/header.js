@@ -97,7 +97,6 @@ class Header extends Component {
   }
 
   render() {
-    console.log(this.props.pathname)
     const homeHeader = this.props.pathname && 'homeHeader'
     return (
       <StyledHeader ref={this.refCallback} home={homeHeader}>
