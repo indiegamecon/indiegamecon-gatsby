@@ -18,8 +18,8 @@ const StyledHome = styled.div`
 
 `
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({location}) => (
+  <Layout pathname={location.pathname}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <StaticQuery
       query={graphql`

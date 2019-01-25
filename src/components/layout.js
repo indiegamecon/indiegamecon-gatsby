@@ -7,7 +7,7 @@ import GlobalStyle from './globalStyles';
 import Starfield from './starfield';
 //import './layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pathname }) => (
   <StaticQuery
     query={graphql`
       query HeaderQuery {
@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
       <GlobalStyle />
       <Starfield />
       
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} pathname={pathname ? pathname : ''}/>
         <main
           style={{
             margin: `0 auto`,

@@ -1,11 +1,6 @@
 ---
 title: 'home'
 ---
-
-# Presented By...
-
-[![Bit Forest Logo](bitforest.png)](http://www.bitforest.co/)
-
 # [What is Indie Game Con?]{.center}
 
 Welcome to the Indie Game Con web page! 🎉 We’re glad you’re here!
