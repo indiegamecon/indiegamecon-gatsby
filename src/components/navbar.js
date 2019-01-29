@@ -15,6 +15,7 @@ const ListLink = props => (
 )
 
 const StyledNavbar = styled.nav`
+  text-align: right;
   @media only screen and (max-width: 750px) {
     font-size: 150%;
     ul {
