@@ -21,7 +21,7 @@ module.exports = {
     description: `Indie Game Con 2019, Eugene Oregon`,
     author: `@mckelveygreg`,
   },
-  pathPrefix: '/indiegamecon-gatsby',
+  pathPrefix: '/indiegamecon-gatsby', // for gh-pages
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -86,6 +86,14 @@ module.exports = {
           }
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Bungee', 'Roboto Mono']
+        }
+      }
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,

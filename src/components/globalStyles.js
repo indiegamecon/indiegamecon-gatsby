@@ -1,11 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono');
+/* @import url('https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono'); */
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
