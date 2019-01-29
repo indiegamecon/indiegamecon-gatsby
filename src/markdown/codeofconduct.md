@@ -1,3 +1,6 @@
+---
+title: Code of Conduct
+---
 # Citizen Code of Conduct
 
 ## 1. Purpose
@@ -8,9 +11,9 @@ This code of conduct outlines our expectations for all those who participate in 
 
 We invite all those who participate in Indie Game Con to help us create safe and positive experiences for everyone.
 
-## 2. Open [Source/Culture/Tech] Citizenship
+## 2. Open -Source/Culture/Tech- Citizenship
 
-A supplemental goal of this Code of Conduct is to increase open [source/culture/tech] citizenship by encouraging participants to recognize and strengthen the relationships between our actions and their effects on our community.
+A supplemental goal of this Code of Conduct is to increase open -source/culture/tech- citizenship by encouraging participants to recognize and strengthen the relationships between our actions and their effects on our community.
 
 Communities mirror the societies in which they exist and positive action is essential to counteract the many forms of inequality and abuses of power that exist in society.
 
