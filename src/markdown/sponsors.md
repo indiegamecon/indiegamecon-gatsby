@@ -45,6 +45,14 @@ If you do not need a 501(c)3 paper receipt, you can donate through our Eventbrit
 ___
 
 ## Past Sponsors
+### Our partners in 2015 were:
+- Travel Lane County
+- Oregon Video Game Association
+- Technology Association of Oregon
+- Oregon Film
+- Portland Indie Game Squad
+- Pixel Arts Game Education
+
 ### Our partners in 2014 were:
 - Travel Lane County
 - Lane Community College (Game Development)
@@ -55,11 +63,3 @@ ___
 - Oreganik LLC (underwriter)
 - Holiday Inn Express
 - Vance Naegle
-
-### Our partners in 2015 were:
-- Travel Lane County
-- Oregon Video Game Association
-- Technology Association of Oregon
-- Oregon Film
-- Portland Indie Game Squad
-- Pixel Arts Game Education
