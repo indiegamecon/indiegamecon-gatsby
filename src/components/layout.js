@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import 'typeface-bungee'
+import 'typeface-roboto-mono'
 
 import Header from './header'
-import GlobalStyle from './globalStyles';
-import Starfield from './starfield';
+import GlobalStyle from './globalStyles'
+import Starfield from './starfield'
 //import './layout.css'
 
 const Layout = ({ children, pathname }) => (
@@ -20,10 +22,13 @@ const Layout = ({ children, pathname }) => (
     `}
     render={data => (
       <>
-      <GlobalStyle />
-      <Starfield />
-      
-        <Header siteTitle={data.site.siteMetadata.title} pathname={pathname ? pathname : ''}/>
+        <GlobalStyle />
+        <Starfield />
+
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          pathname={pathname ? pathname : ''}
+        />
         <main
           style={{
             margin: `0 auto`,
