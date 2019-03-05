@@ -5,17 +5,17 @@ require('dotenv').config({
 })
 
 module.exports = {
-  developMiddleware: app => {
-    app.use(
-      '/.netlify/functions/',
-      proxy({
-        target: 'http://localhost:9000',
-        pathRewrite: {
-          '/.netlify/functions/': '',
-        },
-      })
-    )
-  },
+  // developMiddleware: app => {
+  //   app.use(
+  //     '/.netlify/functions/',
+  //     proxy({
+  //       target: 'http://localhost:9000',
+  //       pathRewrite: {
+  //         '/.netlify/functions/': '',
+  //       },
+  //     })
+  //   )
+  // },
   siteMetadata: {
     title: `Indie Game Con 2019`,
     description: `Indie Game Con 2019, Eugene Oregon`,
@@ -74,7 +74,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          "gatsby-remark-bracketed-spans",
+          'gatsby-remark-bracketed-spans',
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -83,7 +83,7 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 900,
             },
-          }
+          },
         ],
       },
     },
@@ -91,9 +91,9 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bungee', 'Roboto Mono']
-        }
-      }
+          families: ['Bungee', 'Roboto Mono'],
+        },
+      },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
