@@ -11383,6 +11383,16 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-bungee@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-bungee/-/typeface-bungee-0.0.72.tgz#cd9bcf1a0b415ec7503af2a4e800235b8c94561f"
+  integrity sha512-f75IvkhkaOsWLfGQERnha7s9LhW9jXBG/cBJQEAd2LuiDmlWomNB99H/2gYLM2wl834p5CWJT6uGX0iwW6YmtA==
+
+typeface-roboto-mono@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-roboto-mono/-/typeface-roboto-mono-0.0.54.tgz#78e706e0a4158b2b670ed3cdf2269e7a54e671cd"
+  integrity sha512-UjE3Y4Bk7DRA3m9aCN4pp8OOGFEYbJH2wK1Qj3Xv2TjEqEJo+oEmQcXwnt1/DKSYAWdKxSL3D/4ida7OoBFkwQ==
+
 ua-parser-js@^0.7.18:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"

@@ -87,14 +87,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Bungee', 'Roboto Mono'],
-        },
-      },
-    },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
