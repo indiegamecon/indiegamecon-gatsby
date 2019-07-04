@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "airtable": "^0.5.8",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^6.2.0",
     "formik": "^1.4.2",
