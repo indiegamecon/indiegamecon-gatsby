@@ -3,7 +3,7 @@ import { Formik, Form, Field } from 'formik'
 
 import * as yup from 'yup'
 import styled from 'styled-components'
-import { Transition, animated } from 'react-spring'
+import { Transition, animated } from 'react-spring/renderprops'
 
 const StyledForm = styled(Form)`
   display: grid;

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Formik, Form, Field } from 'formik'
 import * as yup from 'yup'
 import styled from 'styled-components'
-import { Transition, animated } from 'react-spring'
+import { Transition, animated } from 'react-spring/renderprops'
 
 const StyledForm = styled(Form)`
   display: grid;
@@ -22,7 +22,8 @@ const StyledForm = styled(Form)`
     font-family: inherit;
     font-weight: bold;
   }
-  label, legend {
+  label,
+  legend {
     text-align: right;
     font-size: 1.5rem;
   }
@@ -61,12 +62,14 @@ const StyledForm = styled(Form)`
       width: auto;
     }
     h3 {
-      font-size: 1.1rem; 
+      font-size: 1.1rem;
     }
     label,
     textarea,
     input,
-    button, p, legend {
+    button,
+    p,
+    legend {
       font-size: 1rem;
     }
   }
@@ -240,7 +243,7 @@ class GameForm extends Component {
                             type="text"
                             name="gameLink"
                           />
-                         
+
                           {/* <legend>Dietary Restrictions:</legend> */}
                           {/* Dietary Restrictions Radio Buttons */}
                           <label htmlFor="excited">

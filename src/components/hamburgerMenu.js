@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { FaBars } from 'react-icons/fa'
 import styled from 'styled-components'
 import NavBar from './navbar'
-import { Transition, animated } from 'react-spring'
+import { Transition, animated } from 'react-spring/renderprops'
 
 class HamburgerMenu extends Component {
   state = {
