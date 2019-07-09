@@ -1,5 +1,5 @@
 # Indie Game Con Website
-[![Build Status](https://travis-ci.com/mckelveygreg/indiegamecon-gatsby.svg?branch=master)](https://travis-ci.com/mckelveygreg/indiegamecon-gatsby)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a3c1521d-8847-4646-a55d-5ec4e170a151/deploy-status)](https://app.netlify.com/sites/indiegamecon/deploys)
 
 ## [Live Site](https://indiegamecon.netlify.com)
 
