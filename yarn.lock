@@ -1517,10 +1517,19 @@ after@0.8.2:
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
   integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
 
-airtable@^0.5.6, airtable@^0.5.8:
+airtable@^0.5.6:
   version "0.5.9"
   resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.5.9.tgz#1db5071d55ea31ec269015de76020b94ed807d35"
   integrity sha512-eB3flT+Y4DSvPnWZRq/zH+uCKMwSD/6X/tuf8ybTd9PbtMbZbuQQJYrnGNfYy5F8YCp6ZhRtn6x50aWhCPD6KQ==
+  dependencies:
+    lodash "4.17.11"
+    request "2.88.0"
+    xhr "2.3.3"
+
+airtable@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.6.0.tgz#b29642bc2ef56ee612805599f6d502ac16818e6c"
+  integrity sha512-+5BQPQu1zUDsnlPyXPAigupxJCdXzZbUtv98jecVgis3eQRWR1Xo6oPWAVoqqTep/Z2ICVowYUUnuvHeNVE3ig==
   dependencies:
     lodash "4.17.11"
     request "2.88.0"

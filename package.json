@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "airtable": "^0.5.8",
+    "airtable": "^0.6.0",
     "axios": "^0.18.1",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^8.0.0",
