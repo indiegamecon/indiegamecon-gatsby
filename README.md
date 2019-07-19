@@ -1,5 +1,6 @@
 # Indie Game Con Website
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a3c1521d-8847-4646-a55d-5ec4e170a151/deploy-status)](https://app.netlify.com/sites/indiegamecon/deploys)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=mckelveygreg/indiegamecon-gatsby)](https://dependabot.com)
 
 ## [Live Site](https://indiegamecon.netlify.com)
 
