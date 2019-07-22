@@ -21,7 +21,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-bracketed-spans": "^2.0.3",
     "gatsby-remark-embed-video": "^1.7.1",
-    "gatsby-remark-images": "^3.1.6",
+    "gatsby-remark-images": "^3.1.7",
     "gatsby-remark-responsive-iframe": "^2.2.4",
     "gatsby-source-airtable": "^2.0.8",
     "gatsby-source-filesystem": "^2.1.5",
