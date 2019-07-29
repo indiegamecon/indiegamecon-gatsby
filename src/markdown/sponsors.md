@@ -25,14 +25,14 @@ An Indie Game Con sponsorship puts you in front of hundreds of passionate game d
 
 ### Title Sponsorship
 * Listing on all PR media, Social media, etc.
-* “Presented by -your name-” title sponsorship  <!-- With a new plugin, you can't use brackets anymore... -->
+* Presented by -your name- title sponsorship
 * Prominent logo placement on t-shirts
 * Exhibit space
 * Listing on all PR media, social media, etc.
 * Opening comments
 
 ## When is Indie Game Con?
-* Indie Game Con will be happening Saturday & Sunday, November 9 & 10, 2019.
+* Indie Game Con will be happening Saturday & Sunday, November 2 & 3, 2019.
 
 ## Who do I contact?
 indiegamecon@gmail.com
