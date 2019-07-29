@@ -14,6 +14,7 @@ Register your game at the top of the page by clicking "Click Here to Sign Up You
 #### Step 2: Visit Eventbrite and purchase your ticket!
 [Buy your Eventbrite Ticket Here!](https://indiegamecon2019.eventbrite.com)
 
+Use codes below to see your tickets:
 * Use Code GameDevTable for IndieTable tickets
 * Use Code GameDevBooth for IndieBooth tickets
 
