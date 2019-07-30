@@ -2,7 +2,7 @@
 title: games
 ---
 
-### Welcome to Indie Game Con
+### [Welcome to Indie Game Con]{.center}
 Thank you for your interest in submitting a game to Indie Game Con this winter. An Indie Game Con submission puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only can you get live feedback for your game, it will give you a chance to meet with other game developers, and help continue Indie Game Con as an Oregon tradition.
 
 ## How to Register and Buy your tickets!
@@ -18,7 +18,7 @@ Use codes below to see your tickets:
 * Use Code GameDevTable for IndieTable tickets
 * Use Code GameDevBooth for IndieBooth tickets
 
-# FAQ
+# [FAQ]{.center}
 ### Whats tickets are availiable?
 There are two ticket types available, IndieTable and IndieBooth.
 
