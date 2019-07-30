@@ -7,16 +7,16 @@ Thank you for your interest in submitting a game to Indie Game Con this winter. 
 
 ## How to Register and Buy your tickets!
 #### Step 1: Register your game!
-[Visit this page!](/games/)
-
 Register your game at the top of the page by clicking "Click Here to Sign Up Your Team!" and submitting the form.
 
-#### Step 2: Visit Eventbrite and purchase your ticket!
-[Buy your Eventbrite Ticket Here!](https://indiegamecon2019.eventbrite.com)
+[Register Here!](/games/)
 
+#### Step 2: Visit Eventbrite and purchase your ticket!
 Use codes below to see your tickets:
 * Use Code <b>GameDevTable</b> for IndieTable tickets
 * Use Code <b>GameDevBooth</b> for IndieBooth tickets
+
+[Buy your Eventbrite Ticket Here!](https://indiegamecon2019.eventbrite.com)
 
 # [FAQ]{.center}
 ### Whats tickets are availiable?
