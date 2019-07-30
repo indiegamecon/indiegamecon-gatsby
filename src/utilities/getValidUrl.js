@@ -1,6 +1,6 @@
 // stolen from https://stackoverflow.com/questions/11300906/check-if-a-string-starts-with-http-using-javascript
 export const getValidUrl = (url = '') => {
-  let newUrl = window.decodeURIComponent(url)
+  let newUrl = url
   newUrl = newUrl.trim().replace(/\s/g, '')
   if (/^(:\/\/)/.test(newUrl)) {
     return `http${newUrl}`
