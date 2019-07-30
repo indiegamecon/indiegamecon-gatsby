@@ -7,7 +7,7 @@ Thank you for your interest in submitting a game to Indie Game Con this winter. 
 
 ## How to Register and Buy your tickets!
 #### Step 1: Register your game!
-[Visit this page!](https://indiegamecon.netlify.com/games/)
+[Visit this page!](games.md)
 
 Register your game at the top of the page by clicking "Click Here to Sign Up Your Team!" and submitting the form.
 
