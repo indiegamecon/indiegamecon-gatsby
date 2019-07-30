@@ -3,7 +3,7 @@ title: games
 ---
 
 ### [Welcome to Indie Game Con]{.center}
-[Thank you for your interest in submitting a game to Indie Game Con this fall. An Indie Game Con submission puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only can you get live feedback for your game, it will give you a chance to meet with other game developers, and help continue Indie Game Con as an Oregon tradition.]{.center}
+[Thank you for your interest in submitting a game to Indie Game Con 2019. An Indie Game Con submission puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only will you get live feedback for your game but it will give you a chance to meet with other game developers. Help us continue Indie Game Con as an Oregon tradition.]{.center}
 
 ## How to Register and Buy your tickets!
 #### Step 1: Register your game!
