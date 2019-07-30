@@ -31,10 +31,19 @@ There are two ticket types available for those submitting a game: IndieTable and
 * One 8' table (decorate as you please).
 * Sell merchandise
 * One pass to Indie Game Con 2019
-Note: Only one IndieBooth per team is necessary, all other team members purchase IndieTable ticket.
+Note: An IndieBooth Ticket is NOT required for teams.
 
 ### What do I do if I'm on a team?
-Register below and fill out the form details. Purchase one ticket per team member. Only one IndieBooth ticket is required for the entire team. Have the other members of the team purchase individual IndieTable Tickets.
+Register below and fill out the form details.
+
+Decide if you would like a whole table or a shared table with your team.
+
+Purchase one ticket per team member.
+Only one IndieBooth ticket is required for the entire team.
+Have the other members of the team purchase individual IndieTable Tickets.
+
+
+For example, a three person team would need one IndieBooth ticket and two IndieTable tickets.
 
 ### What equipment do we have to bring?
 You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, and LCD monitor. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
