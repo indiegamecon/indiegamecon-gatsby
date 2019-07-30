@@ -39,8 +39,8 @@ An indie game, or independent video game, is a video game that is often created 
 
 ## [Where and When]{.center}
 
-- Saturday & Sunday, November 9 & 10
-- Venue TBD + Map
+- Saturday, November 2, 2019 at 10:00 AM - Sunday, November 3, 2019 at 5:00 PM (PDT)
+- Lane Events Center | 796 West 13th Avenue | Eugene, OR 97402
 
 ---
 
