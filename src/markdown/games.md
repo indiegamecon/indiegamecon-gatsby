@@ -18,23 +18,23 @@ Use codes below to see your tickets:
 
 # [FAQ: Frequently Asked Questions]{.center}
 ### What tickets are availiable?
-There are two ticket types available for those submitting a game, IndieTable and IndieBooth.
+There are two ticket types available for those submitting a game: IndieTable and IndieBooth.
 
 ### What do you get for each ticket?
 ##### IndieTable Ticket:
 * Listing on our website
-* One 4' shared table (with up to two other developers).
+* One 8' shared table (with up to two other developers).
 * One pass to Indie Game Con 2019
 
 ##### IndieBooth Ticket:
 * Listing on our website
-* One 4' table (decorate as you please).
+* One 8' table (decorate as you please).
 * Sell merchandise
 * One pass to Indie Game Con 2019
 Note: Only one IndieBooth per team is necessary, all other team members purchase IndieTable ticket.
 
 ### What do I do if I'm on a team?
-Register below and fill out the form details, then purchase one ticket per team member. Only one IndieBooth ticket is required for the entire team. Have the rest of the team purchase IndieTable Tickets.
+Register below and fill out the form details, then purchase one ticket per team member. Only one IndieBooth ticket is required for the entire team. Have the other memebers of the team purchase individual IndieTable Tickets.
 
 ### What equipment do we have to bring?
 You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, and LCD monitor. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
