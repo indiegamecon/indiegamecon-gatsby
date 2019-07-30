@@ -18,6 +18,7 @@ body {
   background: #2e319277;
   box-shadow: 5px 5px 5px #000000aa;
   color: #eee;
+  text-shadow: 2px 4px 30px black;
 }
 
 h1, h2, h3 {
@@ -57,6 +58,7 @@ ul, ol, li {
 
 a {
   color: #fff200;
+  text-decoration: underline;
 }
 
 li {

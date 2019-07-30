@@ -10,12 +10,15 @@ const StyledForm = styled(Form)`
   grid-gap: 10px;
   padding: 2rem;
 
+  h3 {
+    text-align: right;
+    line-height: 2rem;
+  }
   p {
     background: #2b2b2b55;
     align-self: center;
     padding: 10px;
   }
-
   textarea {
     height: 150px;
     border-radius: 5px;

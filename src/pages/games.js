@@ -9,17 +9,19 @@ import { StaticQuery, graphql } from 'gatsby'
 import GameCards from '../components/gameCards'
 
 const Button = styled.button`
-  margin: 10px auto;
+  margin: 3rem auto;
+  padding: 1.5rem;
   display: inherit;
-  width: 250px;
+  width: auto;
   grid-column: 2 / 3;
   background: #2b2b2b;
   border: none;
-  height: 3rem;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0px 1px 5px #333;
   color: white;
   cursor: pointer;
+  font-size: 2rem;
 
   :active,
   :hover {
@@ -62,6 +64,7 @@ class Games extends Component {
                     teamMembers
                     teamName
                     gameName
+                    gameLink
                   }
                 }
               }
@@ -71,14 +74,7 @@ class Games extends Component {
         render={data => (
           <Layout>
             <SEO title="Games" />
-            <div
-              dangerouslySetInnerHTML={{
-                __html: data.rules.html,
-              }}
-            />
-            <Button onClick={this.handleToggle} style={{ fontSize: '1rem' }}>
-              Click Here to Sign Up Your Team!
-            </Button>
+            <Button onClick={this.handleToggle}>Submit Your Game!</Button>
             <Transition
               items={this.state.toggleForm}
               from={{ opacity: 0 }}
@@ -94,8 +90,21 @@ class Games extends Component {
                 ))
               }
             </Transition>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.rules.html,
+              }}
+            />
             <hr />
-            <h2>Games that are signed up</h2>
+            <h2
+              style={{
+                textAlign: 'center',
+                fontSize: '2.5rem',
+                textShadow: '1px 1px 4px 4px black',
+              }}
+            >
+              IGC 2019 Featured Games
+            </h2>
             <GameCards games={data.games.edges} />
           </Layout>
         )}
