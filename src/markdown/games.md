@@ -46,13 +46,16 @@ Have the other members of the team purchase individual IndieTable Tickets.
 For example, a three person team would need one IndieBooth ticket and two IndieTable tickets.
 
 ### What equipment do we have to bring?
-You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, and LCD monitor. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
+You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, LCD monitor, cables, and power strips. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
 
 ### What equipment will Indie Game Con provide?
-We will provide a table, extension cords, and some power strips.
+We will provide a table and power.
 
-### Can I sell merchandise with a IndieTable Pass?
+### Will Indie Game Con provide WiFi?
+We will have WiFi however to ensure optimal usability please ensure your game works offline.
+
+### Can I sell merchandise with an IndieTable Ticket?
 No, only IndieBooth ticket holders may sell merchandise.
 
-### What if I buy a IndieTable or IndieBooth ticket without registering?
-You will have to register a game or we will refuse entry and void your ticket with no refunds.
+### What if I buy an IndieTable or IndieBooth ticket without registering a game?
+You will have to register a game or we will refuse entry and void your ticket without refund.
