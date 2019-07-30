@@ -7,11 +7,13 @@ Welcome to the Indie Game Con web page! 🎉 We’re glad you’re here!
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cOagQX87SCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-It’s tricky to market a game with no budget, and it’s difficult to labor in solitude on a passion project. But when strangers pick up the controller and start to laugh and smile, it all seems worth it. And when you meet fellow creators who understand the highs and lows of indie game development, you feel like you’ve found your tribe.
+It’s tricky to market a game without a budget. Laboring on your passion project in solitude can be difficult. So when you get the opportunity to share your game (players pick up the controller, and start to laugh and smile) it all seems worth it. When you meet fellow creators, who understand the highs and lows of indie game development, you feel like you’ve found your tribe.
 
-That’s why Indie Game Con exists: to put creator-owned games in front of mainstream audiences, and build a space where game developers can hang out with their own.
+That’s why Indie Game Con (IGC) exists: to put creator-owned games in front of mainstream audiences, and build a space where game developers can hang out with their own. 
 
-IGC has been an annual event in Eugene, Oregon since 2013, and is run by Bitforest, a non-profit organization sponsored by Innovate Oregon. Run by volunteer tech and game dev professionals, it’s an expression of the inclusive game community in Eugene and beyond.
+2019 Marks the 6th annual IGC Eugene, OR..  This event is backed by Bitforest, a local non-profit organization sponsored by Innovate Oregon.  IGC is powered by volunteer tech and game dev professionals and its generous community sponsors.  It’s the ultimate expression of the inclusive game community in the Eugene area.
+
+This event features: Dozens of games developed by local creators, an Artist Alley, vendor booths, workshops, and panels. 
 
 ### Signup as a [Contributor](/games/), Volunteer, or Buy a Ticket on [Eventbrite](https://indiegamecon2019.eventbrite.com)
 
