@@ -15,7 +15,7 @@ That’s why Indie Game Con (IGC) exists: to put creator-owned games in front of
 
 This event features: Dozens of games developed by local creators, an Artist Alley, vendor booths, workshops, and panels. 
 
-### Signup as a [Contributor](/games/), Volunteer, or Buy a Ticket on [Eventbrite](https://indiegamecon2019.eventbrite.com)
+### Signup as a [Contributor](/games/) or Buy a Ticket on [Eventbrite](https://indiegamecon2019.eventbrite.com)
 
 ---
 
