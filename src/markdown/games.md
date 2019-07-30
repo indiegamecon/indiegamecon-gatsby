@@ -3,7 +3,7 @@ title: games
 ---
 
 ### [Welcome to Indie Game Con]{.center}
-Thank you for your interest in submitting a game to Indie Game Con this winter. An Indie Game Con submission puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only can you get live feedback for your game, it will give you a chance to meet with other game developers, and help continue Indie Game Con as an Oregon tradition.
+[Thank you for your interest in submitting a game to Indie Game Con this fall. An Indie Game Con submission puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only can you get live feedback for your game, it will give you a chance to meet with other game developers, and help continue Indie Game Con as an Oregon tradition.]{.center}
 
 ## How to Register and Buy your tickets!
 #### Step 1: Register your game!
@@ -18,7 +18,7 @@ Use codes below to see your tickets:
 
 [Buy your Eventbrite Ticket Here!](https://indiegamecon2019.eventbrite.com)
 
-# [FAQ]{.center}
+# [FAQ: Frequently Asked Questions]{.center}
 ### Whats tickets are availiable?
 There are two ticket types available, IndieTable and IndieBooth.
 
@@ -39,9 +39,9 @@ Note: Only one IndieBooth per team is necessary, all other team members purchase
 Register below and fill out the form details, then purchase one ticket per team member. Only one IndieBooth ticket is required for the entire team. Have the rest of the team purchase IndieTable Tickets.
 
 ### What equipment do we have to bring?
-You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, and LCD monitor. If you only have a laptop, you are allowed to let event goers to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
+You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, and LCD monitor. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
 
-### What equipment will you provide?
+### What equipment will Indie Game Con provide?
 We will provide a table, extension cords, and some power strips.
 
 ### Can I sell merchandise with a IndieTable Pass?
