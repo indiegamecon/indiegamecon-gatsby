@@ -7,7 +7,7 @@ Welcome to the Indie Game Con web page! 🎉 We’re glad you’re here!
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cOagQX87SCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-It’s tricky to market a game without a budget. Laboring on your passion project in solitude can be difficult. So when you get the opportunity to share your game (players pick up the controller, and start to laugh and smile) it all seems worth it. When you meet fellow creators, who understand the highs and lows of indie game development, you feel like you’ve found your tribe.
+It’s tricky to market a game without a budget. Laboring on your passion project in solitude can be difficult. So when you get the opportunity to share your game (players pick up the controller, and start to laugh and smile) it all seems worth it.
 
 That’s why Indie Game Con (IGC) exists: to put creator-owned games in front of mainstream audiences, and build a space where game developers can hang out with their own. 
 
