@@ -14,11 +14,11 @@ Use codes below to see your tickets:
 * Use Code <b>GameDevTable</b> for IndieTable tickets.
 * Use Code <b>GameDevBooth</b> for IndieBooth tickets.
 
-[Buy your Eventbrite Ticket Here!](https://indiegamecon2019.eventbrite.com)
+[[Buy your Eventbrite Ticket Here](https://indiegamecon2019.eventbrite.com)]{.center}
 
 # [FAQ: Frequently Asked Questions]{.center}
-### Whats tickets are availiable?
-There are two ticket types available, IndieTable and IndieBooth.
+### What tickets are availiable?
+There are two ticket types available for those submitting a game, IndieTable and IndieBooth.
 
 ### What do you get for each ticket?
 ##### IndieTable Ticket:
