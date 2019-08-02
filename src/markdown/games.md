@@ -10,9 +10,7 @@ title: games
 Register your game at the top of this page by clicking the "Click Here to Sign Up Your Team!" button and submitting the form.
 
 #### Step 2: Visit Eventbrite and Purchase Your Ticket
-Use codes below to see your tickets:
-* Use Code <b>GameDevTable</b> for IndieTable tickets.
-* Use Code <b>GameDevBooth</b> for IndieBooth tickets.
+* Use Code <b>GameDevTable</b> to see the tickets.
 
 [[Buy your Eventbrite Ticket Here](https://indiegamecon2019.eventbrite.com)]{.center}
 
@@ -34,16 +32,9 @@ There are two ticket types available for those submitting a game: IndieTable and
 Note: An IndieBooth Ticket is NOT required for teams.
 
 ### What do I do if I'm on a team?
-Register below and fill out the form details.
+Decide if you would like a whole table or a shared table with your team. Register your game, then purchase one ticket per team member.
 
-Decide if you would like a whole table or a shared table with your team.
-
-Purchase one ticket per team member.
-Only one IndieBooth ticket is required for the entire team.
-Have the other members of the team purchase individual IndieTable Tickets.
-
-
-For example, a three person team would need one IndieBooth ticket and two IndieTable tickets.
+When purchasing an IndieBooth ticket, only one is required per team. Have the other members of the team purchase IndieTable Tickets. For example, a three person team would need one IndieBooth ticket and two IndieTable tickets.
 
 ### What equipment do we have to bring?
 You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, LCD monitor, cables, and power strips. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
