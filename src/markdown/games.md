@@ -7,7 +7,7 @@ title: games
 
 ## How to Register and Buy your tickets:
 #### Step 1: Register Your Game
-Register your game at the top of this page by clicking the "Click Here to Sign Up Your Team!" button and submitting the form.
+Register your game at the top of this page by clicking the "Submit Your Game!" button and submitting the form.
 
 #### Step 2: Visit Eventbrite and Purchase Your Ticket
 * Use Code <b>GameDevTable</b> to see the tickets.
