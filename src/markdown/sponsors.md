@@ -10,7 +10,7 @@ An Indie Game Con sponsorship puts you in front of hundreds of passionate game d
 ## What do you get?
 ### Community Partner Sponsorship
 * Partner logo cloud on t-shirt
-* [Contact us](indiegamecon@gmail.com) for how you can help!
+* [Contact us](malto:indiegamecon@gmail.com) for how you can help!
 
 ### Supporting Level Sponsorship
 * Medium logo placement on t-shirts
