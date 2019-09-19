@@ -33,6 +33,7 @@ const Navbar = ({ children }) => (
       <ListLink to="/games">Games</ListLink>
       <ListLink to="/schedule">Schedule</ListLink>
       <ListLink to="/sponsors">Sponsors</ListLink>
+      <ListLink to="/volunteers">Volunteers</ListLink>
       <ListLink to="/media">Media</ListLink>
       <ListLink to="/about">About</ListLink>
     </ul>
