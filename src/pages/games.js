@@ -65,6 +65,7 @@ class Games extends Component {
                     teamName
                     gameName
                     gameLink
+                    confirmed
                   }
                 }
               }

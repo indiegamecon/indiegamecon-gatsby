@@ -6,9 +6,11 @@ export default class GameCards extends Component {
     const games = this.props.games
     return (
       <div>
-        {games.map(({ node: { data } }) => (
-          <GameCard {...data} key={data.gameName} />
-        ))}
+        {games
+          .filter(({ node }) => node.data.confirmed)
+          .map(({ node: { data } }) => (
+            <GameCard {...data} key={data.gameName} />
+          ))}
         <hr />
       </div>
     )
@@ -25,13 +27,17 @@ const GameCard = ({
   return (
     <div>
       <h3>
-        <a
-          href={getValidUrl(gameLink)}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {gameName}
-        </a>
+        {gameLink ? (
+          <a
+            href={getValidUrl(gameLink)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {gameName}
+          </a>
+        ) : (
+          console.log(gameName)
+        )}
       </h3>
       <h4 style={{ fontStyle: 'italic' }}>{teamName}</h4>
       <p>{gameDescription}</p>

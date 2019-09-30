@@ -5,17 +5,6 @@ require('dotenv').config({
 })
 
 module.exports = {
-  // developMiddleware: app => {
-  //   app.use(
-  //     '/.netlify/functions/',
-  //     proxy({
-  //       target: 'http://localhost:9000',
-  //       pathRewrite: {
-  //         '/.netlify/functions/': '',
-  //       },
-  //     })
-  //   )
-  // },
   siteMetadata: {
     title: `Indie Game Con 2019`,
     description: `Indie Game Con 2019, Eugene Oregon`,
@@ -41,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        // apiKey: process.env.GATSBY_AIRTABLE_API_KEY, // this plugin looks for GATSBY_AIRTABLE_API_KEY automatically if environment variables are required above.
+        apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
         tables: [
           {
             baseId: `appxzIMSRIukQuB1k`, // found in api docs, check the 'show api' button, and is the number '...base('YOUR_BASE ID')
