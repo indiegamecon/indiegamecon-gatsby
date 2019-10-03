@@ -23,7 +23,7 @@ const postToSlack = async data => {
   const { SLACK } = process.env
 
   const payload = {
-    text: `New Game! /n Name: ${data.name}/n email: ${data.email}/n link: ${data.link}`,
+    text: `*New Game!* \n Name: ${data.name}\n *Email:* ${data.email}\n *Link:* ${data.link}`,
   }
   axios
     .post(SLACK, JSON.stringify(payload))
