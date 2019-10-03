@@ -31,12 +31,14 @@ const postToSlack = async data => {
       text: `*New Contact!* \n *Name:* ${data.name}\n *Email:* ${data.email}\n *Message:* ${data.message}`,
     }
   }
-  try {
-    const response = await axios.post(SLACK, JSON.stringify(payload))
-    console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
-  } catch (error) {
-    console.log('FAILED: Send slack webhook', error)
-  }
+  return await axios
+    .post(SLACK, JSON.stringify(payload))
+    .then(response => {
+      console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
+    })
+    .catch(error => {
+      console.log('FAILED: Send slack webhook', error)
+    })
 }
 
 export async function handler(event) {
