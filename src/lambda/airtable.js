@@ -21,6 +21,7 @@ const saveContact = async data => {
 
 const postToSlack = async data => {
   const { SLACK } = process.env
+
   const payload = {
     text: `New Game! /n Name: ${data.name}/n email: ${data.email}/n link: ${data.link}`,
   }
