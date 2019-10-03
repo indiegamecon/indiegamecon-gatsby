@@ -20,8 +20,21 @@ const saveContact = async data => {
 }
 
 const postToSlack = async data => {
-  const { SLACK } = process.env
-  await axios.post(SLACK, data)
+  const options = {
+    text: data,
+  }
+
+  axios
+    .post(
+      'https://hooks.slack.com/services/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',
+      JSON.stringify(options)
+    )
+    .then(response => {
+      console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
+    })
+    .catch(error => {
+      console.log('FAILED: Send slack webhook', error)
+    })
 }
 
 export async function handler(event) {
