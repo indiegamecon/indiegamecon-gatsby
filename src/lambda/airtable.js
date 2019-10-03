@@ -1,39 +1,45 @@
 const Airtable = require('airtable')
+const axios = require('axios')
 
-
-const saveContact = async (data) => {
-  return new Promise  ((resolve, reject) => {
+const saveContact = async data => {
+  return new Promise((resolve, reject) => {
     const { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } = process.env
 
     Airtable.configure({
-      AIRTABLE_API_KEY
+      AIRTABLE_API_KEY,
     })
 
     const base = Airtable.base(AIRTABLE_BASE_ID)
-    
+
     // formName directs data to correct base
     base(data.formName).create(data, err => {
-      if (err) return reject(err);
-      resolve();
+      if (err) return reject(err)
+      resolve()
     })
   })
 }
 
-export async function handler (event) {
+const postToSlack = async data => {
+  const { SLACK } = process.env
+  await axios.post(SLACK, data)
+}
+
+export async function handler(event) {
   try {
     const data = JSON.parse(event.body)
     await saveContact(data)
+    await postToSlack(data)
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: "Apparently this saved to airtable..."
-      })
+        message: 'Apparently this saved to airtable...',
+      }),
     }
   } catch (error) {
     console.log(error)
     return {
       statusCode: 500,
-      body: error.message
+      body: error.message,
     }
   }
 }
