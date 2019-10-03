@@ -20,15 +20,12 @@ const saveContact = async data => {
 }
 
 const postToSlack = async data => {
+  const { SLACK } = process.env
   const payload = {
     text: `New Game! /n Name: ${data.name}/n email: ${data.email}/n link: ${data.link}`,
   }
-
   axios
-    .post(
-      'https://hooks.slack.com/services/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',
-      JSON.stringify(payload)
-    )
+    .post(SLACK, JSON.stringify(payload))
     .then(response => {
       console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
     })
