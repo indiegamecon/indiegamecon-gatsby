@@ -2,20 +2,21 @@ const Airtable = require('airtable')
 const axios = require('axios')
 
 const saveContact = async data => {
-  const { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } = process.env
+  return new Promise((resolve, reject) => {
+    const { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } = process.env
 
-  Airtable.configure({
-    AIRTABLE_API_KEY,
+    Airtable.configure({
+      AIRTABLE_API_KEY,
+    })
+
+    const base = Airtable.base(AIRTABLE_BASE_ID)
+
+    // formName directs data to correct base
+    base(data.formName).create(data, err => {
+      if (err) return reject(err)
+      resolve()
+    })
   })
-
-  const base = Airtable.base(AIRTABLE_BASE_ID)
-
-  // formName directs data to correct base
-  try {
-    await base(data.formName).create()
-  } catch (error) {
-    console.log('FAILED: Send slack webhook', error)
-  }
 }
 
 const postToSlack = async data => {
@@ -31,14 +32,18 @@ const postToSlack = async data => {
       text: `*New Contact!* \n *Name:* ${data.name}\n *Email:* ${data.email}\n *Message:* ${data.message}`,
     }
   }
-  await axios
-    .post(SLACK, JSON.stringify(payload))
-    .then(response => {
-      console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
-    })
-    .catch(error => {
-      console.log('FAILED: Send slack webhook', error)
-    })
+  return new Promise((resolve, reject) =>
+    axios
+      .post(SLACK, JSON.stringify(payload))
+      .then(response => {
+        console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
+        resolve()
+      })
+      .catch(error => {
+        console.log('FAILED: Send slack webhook', error)
+        reject()
+      })
+  )
 }
 
 export async function handler(event) {
