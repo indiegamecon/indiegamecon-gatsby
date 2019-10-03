@@ -25,11 +25,11 @@ const postToSlack = async data => {
   let payload
   if (gameForm) {
     payload = {
-      text: `*New Game!* \n Name: ${data.name}\n *Email:* ${data.email}\n *Link:* ${data.gameLink}`,
+      text: `*New Game!* \n *Name:* ${data.name}\n *Email:* ${data.email}\n *Link:* ${data.gameLink}`,
     }
   } else {
     payload = {
-      text: `*New Contact!* \n Name: ${data.name}\n *Email:* ${data.email}\n *Message:* ${data.message}`,
+      text: `*New Contact!* \n *Name:* ${data.name}\n *Email:* ${data.email}\n *Message:* ${data.message}`,
     }
   }
   axios
