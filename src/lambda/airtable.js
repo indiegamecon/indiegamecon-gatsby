@@ -21,9 +21,16 @@ const saveContact = async data => {
 
 const postToSlack = async data => {
   const { SLACK } = process.env
-
-  const payload = {
-    text: `*New Game!* \n Name: ${data.name}\n *Email:* ${data.email}\n *Link:* ${data.link}`,
+  const gameForm = data.formName === 'Games'
+  let payload
+  if (gameForm) {
+    payload = {
+      text: `*New Game!* \n Name: ${data.name}\n *Email:* ${data.email}\n *Link:* ${data.gameLink}`,
+    }
+  } else {
+    payload = {
+      text: `*New Contact!* \n Name: ${data.name}\n *Email:* ${data.email}\n *Message:* ${data.message}`,
+    }
   }
   axios
     .post(SLACK, JSON.stringify(payload))
@@ -43,7 +50,7 @@ export async function handler(event) {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: 'Apparently this saved to airtable...',
+        message: 'Data saved and slack notification sent',
       }),
     }
   } catch (error) {
