@@ -31,7 +31,7 @@ const postToSlack = async data => {
       text: `*New Contact!* \n *Name:* ${data.name}\n *Email:* ${data.email}\n *Message:* ${data.message}`,
     }
   }
-  return await axios
+  await axios
     .post(SLACK, JSON.stringify(payload))
     .then(response => {
       console.log('SUCCEEDED: Sent slack webhook: \n', response.data)
