@@ -6,7 +6,6 @@ import 'typeface-roboto-mono'
 
 import Header from './header'
 import GlobalStyle from './globalStyles'
-import Starfield from './starfield'
 //import './layout.css'
 
 const Layout = ({ children, pathname }) => (
@@ -23,8 +22,6 @@ const Layout = ({ children, pathname }) => (
     render={data => (
       <>
         <GlobalStyle />
-        <Starfield />
-
         <Header
           siteTitle={data.site.siteMetadata.title}
           pathname={pathname ? pathname : ''}
