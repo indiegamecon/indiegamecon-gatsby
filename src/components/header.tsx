@@ -108,7 +108,6 @@ const Header: React.FC<{ isHomePage: boolean }> = ({ isHomePage }) => {
         <Link to="/">
           <Logo src={IGCLogo} />
         </Link>
-        <Img fluid={photo.file.childImageSharp.fluid} />
         {isHomePage && (
           <Date>
             <h4>November 2nd and 3rd</h4>
