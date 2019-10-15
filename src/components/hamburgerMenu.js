@@ -45,6 +45,7 @@ class HamburgerMenu extends Component {
 }
 
 const StyledHamburgerMenu = styled(HamburgerMenu)`
+  text-align: right;
   button {
     text-align: right;
     margin-right: 1rem;

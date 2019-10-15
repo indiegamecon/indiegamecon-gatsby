@@ -12,12 +12,21 @@ module.exports = {
   },
   pathPrefix: '/indiegamecon-gatsby', // for gh-pages
   plugins: [
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /vectors/, // See below to configure properly
+        },
       },
     },
     {
