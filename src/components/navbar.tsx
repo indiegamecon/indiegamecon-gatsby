@@ -18,12 +18,13 @@ const ListLink = props => (
   </li>
 )
 
-const StyledNavbar = styled.nav`
+const StyledNavbar = styled.nav<{ open: boolean }>`
   display: flex;
   background-color: ${Colors.PRIMARY_LIGHT};
 
   @media only screen and (max-width: 750px) {
     font-size: 150%;
+    display: ${({ open }) => (open ? '' : 'none')};
     ul {
       display: flex;
       flex-direction: column;
@@ -32,9 +33,9 @@ const StyledNavbar = styled.nav`
   }
 `
 
-const Navbar = () => (
+const Navbar: React.FC<{ navOpen: boolean }> = ({ navOpen }) => (
   <>
-    <StyledNavbar>
+    <StyledNavbar open={navOpen}>
       <ul style={{ listStyle: `none`, margin: 'auto' }}>
         <ListLink to="/">Home</ListLink>
         <ListLink to="/developers">Developers</ListLink>

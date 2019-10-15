@@ -34,7 +34,7 @@ class HamburgerMenu extends Component {
             showNav &&
             (styles => (
               <animated.div style={styles}>
-                <NavBar />
+                <NavBar navOpen={showNav} />
               </animated.div>
             ))
           }
@@ -45,21 +45,25 @@ class HamburgerMenu extends Component {
 }
 
 const StyledHamburgerMenu = styled(HamburgerMenu)`
-  text-align: right;
-  button {
+  display: none;
+  @media only screen and (max-width: 750px) {
+    display: block;
     text-align: right;
-    margin-right: 1rem;
-    background: none;
-    border: none;
-    height: 3rem;
-    color: white;
-    cursor: pointer;
-    -webkit-tap-highlight-color: #00000000;
-    &:focus,
-    :hover,
-    :active {
-      outline: none;
+    button {
+      text-align: right;
+      margin-right: 1rem;
       background: none;
+      border: none;
+      height: 3rem;
+      color: white;
+      cursor: pointer;
+      -webkit-tap-highlight-color: #00000000;
+      &:focus,
+      :hover,
+      :active {
+        outline: none;
+        background: none;
+      }
     }
   }
 `

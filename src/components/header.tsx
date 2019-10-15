@@ -1,4 +1,5 @@
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import React, { Component } from 'react'
 import Navbar from './navbar'
 import IGCLogo from '../images/IGC White Logo Stroke Only.svg'
@@ -28,6 +29,7 @@ const StyledHeader = styled.header<{ home: boolean }>`
   padding: 0 1%;
   max-width: 960px;
   margin: 0 auto;
+  z-index: 1;
   ${({ home }) =>
     home &&
     css`
@@ -63,62 +65,71 @@ const Year = styled.h2`
 
 const Transparent = styled.div`
   position: absolute;
-  top: 1rem;
+  top: 7%;
   right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
-  img {
-    opacity: 0.2;
-    max-height: 300px;
-  }
+  height: 100%;
+  width: 50%;
+  z-index: -1;
 `
 
-class Header extends Component<{ isHomePage: boolean }> {
-  state = {
-    headerWidth: 0,
+const Image = styled(Img)`
+  width: 100%;
+  opacity: 0.2;
+`
+
+const ShowOnDesktop = styled.div`
+  @media only screen and (max-width: 750px) {
+    display: none;
   }
-
-  handleResize = element =>
-    this.setState({ headerWidth: element.getBoundingClientRect(element).width })
-
-  refCallback = element => {
-    if (element) {
-      this.elementRef = element
-      this.setState({
-        headerWidth: element.getBoundingClientRect(element).width,
-      })
+`
+const Header: React.FC<{ isHomePage: boolean }> = ({ isHomePage }) => {
+  const photo = useStaticQuery(graphql`
+    {
+      file(relativePath: { eq: "igcphoto.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 80) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
-  }
-  elementRef: any
-
-  render() {
-    const homeHeader = this.props.isHomePage
-    return (
-      <>
-        {this.state.headerWidth > 733 ? <Navbar /> : <HamburgerButton />}
-        <StyledHeader ref={this.refCallback} home={homeHeader}>
-          <Link to="/">
-            <Logo src={IGCLogo} />
-          </Link>
-          {homeHeader && (
-            <Date>
-              <h4>November 2nd and 3rd</h4>
-              <Year>2019</Year>
-            </Date>
+  `)
+  console.log(photo)
+  return (
+    <>
+      <HamburgerButton />
+      <ShowOnDesktop>
+        <Navbar navOpen={true} />
+      </ShowOnDesktop>
+      <StyledHeader home={isHomePage}>
+        <Link to="/">
+          <Logo src={IGCLogo} />
+        </Link>
+        <Img fluid={photo.file.childImageSharp.fluid} />
+        {isHomePage && (
+          <Date>
+            <h4>November 2nd and 3rd</h4>
+            <Year>2019</Year>
+          </Date>
+        )}
+        <Transparent>
+          {isHomePage && (
+            <Image
+              fluid={photo.file.childImageSharp.fluid}
+              // style={{ width: '100%', height: '100%' }}
+            />
           )}
-          <Transparent>
-            {homeHeader && <img src={require('../images/igcphoto.png')} />}{' '}
-          </Transparent>
-          <a href="https://www.bitforest.co">
-            <BitforestLogo />
-          </a>
-        </StyledHeader>
-        <Bar />
-      </>
-    )
-  }
+        </Transparent>
+        <a href="https://www.bitforest.co">
+          <BitforestLogo />
+        </a>
+      </StyledHeader>
+      <Bar />
+    </>
+  )
 }
 
 export default Header
