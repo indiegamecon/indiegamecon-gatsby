@@ -1,13 +1,12 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components' 
+import styled from 'styled-components'
 import ContactForm from '../components/contactForm'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const StyledHome = styled.div`
-
   p {
     text-align: center;
   }
@@ -15,11 +14,10 @@ const StyledHome = styled.div`
     margin: 0 auto;
     display: block;
   }
-
 `
 
-const IndexPage = ({location}) => (
-  <Layout pathname={location.pathname}>
+const IndexPage = () => (
+  <Layout isHomePage={true}>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <StaticQuery
       query={graphql`
@@ -32,8 +30,9 @@ const IndexPage = ({location}) => (
       `}
       render={data => (
         <>
-          <StyledHome 
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <StyledHome
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          />
         </>
       )}
     />

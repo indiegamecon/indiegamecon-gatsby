@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { Colors } from '../utilities'
 
 const GlobalStyle = createGlobalStyle`
 /* @import url('https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono'); */
@@ -6,8 +7,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
-  background-color: #231f20;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  background-color: ${Colors.PRIMARY_DARK};
 
   *, *::before, *::after {
     box-sizing: inherit;
@@ -15,10 +17,11 @@ html {
 }
 body {
   margin: 0 auto;
-  background: #2e319277;
+  background: ${Colors.PRIMARY_DARK};
   box-shadow: 5px 5px 5px #000000aa;
   color: #eee;
   text-shadow: 2px 4px 30px black;
+  position: relative;
 }
 
 h1, h2, h3 {
@@ -40,6 +43,7 @@ h3 {
 
 h4 {
   font-size: 1.4rem;
+  font-weight: 100;
 }
 h5 {
   font-size: 1.3rem;
