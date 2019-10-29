@@ -24,3 +24,54 @@ https://www.glimmer.tech
 #### Bitforest
 
 http://www.bitforest.co
+
+---
+
+### [Submit Your Game!]
+[Thank you for your interest in submitting a game to Indie Game Con 2019. An Indie Game Con submission puts you in front of hundreds of passionate game developers and consumers. In previous years, we have had 400 individuals attend our event. Not only will you get live feedback for your game but it will give you a chance to meet with other game developers. Help us continue Indie Game Con as an Oregon tradition.]
+
+## How to Register and Buy your tickets:
+#### Step 1: Register Your Game
+Register your game at the top of this page by clicking the "Submit Your Game!" button and submitting the form.
+
+#### Step 2: Visit Eventbrite and Purchase Your Ticket
+* Use Code <b>GameDevTable</b> to see the tickets.
+
+[[Buy your Eventbrite Ticket Here](https://indiegamecon2019.eventbrite.com)]
+
+# [FAQ: Frequently Asked Questions]{.center}
+### What tickets are availiable?
+There are two ticket types available for those submitting a game: IndieTable and IndieBooth.
+
+### What do you get for each ticket?
+##### IndieTable Ticket:
+* Listing on our website
+* One 8' shared table (with up to two other developers).
+* One pass to Indie Game Con 2019
+
+##### IndieBooth Ticket:
+* Listing on our website
+* One 8' table (decorate as you please).
+* Sell merchandise
+* One pass to Indie Game Con 2019
+Note: An IndieBooth Ticket is NOT required for teams.
+
+### What do I do if I'm on a team?
+Decide if you would like a whole table or a shared table with your team. Register your game, then purchase one ticket per team member.
+
+When purchasing an IndieBooth ticket, only one is required per team. Have the other members of the team purchase IndieTable Tickets. For example, a three person team would need one IndieBooth ticket and two IndieTable tickets.
+
+### What equipment do we have to bring?
+You will need to bring all the equipment to setup your game. This includes hardware, inputs, audio, video, and cables. A typical setup includes a laptop, keyboard/controller, LCD monitor, cables, and power strips. If you only have a laptop, you are allowed to let patrons to play directly from your personal device, but be warned, Indie Game Con is not responsible for damage to your personal equipment. We are not responsible for ensuring your game works at your station.
+
+### What equipment will Indie Game Con provide?
+We will provide a table and power.
+
+### Will Indie Game Con provide WiFi?
+We will have WiFi however to ensure optimal usability please ensure your game works offline.
+
+### Can I sell merchandise with an IndieTable Ticket?
+No, only IndieBooth ticket holders may sell merchandise.
+
+### What if I buy an IndieTable or IndieBooth ticket without registering a game?
+You will have to register a game or we will refuse entry and void your ticket without refund.
