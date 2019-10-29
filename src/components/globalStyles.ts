@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import { Colors } from '../utilities'
+import { createGlobalStyle } from "styled-components"
+
+import { Colors } from "../utilities"
 
 const GlobalStyle = createGlobalStyle`
 /* @import url('https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono'); */
@@ -113,6 +114,10 @@ iframe {
     width: 100%;
   }
 
+}
+
+hr {
+  margin: 2rem 0;
 }
 `
 

@@ -25,7 +25,10 @@ const Sponsors = () => {
         body
       }
 
-      allAirtable(filter: { table: { eq: "Sponsors" } }) {
+      allAirtable(
+        filter: { table: { eq: "Sponsors" } }
+        sort: { order: ASC, fields: data___order }
+      ) {
         edges {
           node {
             data {
@@ -35,7 +38,7 @@ const Sponsors = () => {
                 localFiles {
                   childImageSharp {
                     fluid(maxWidth: 400) {
-                      ...GatsbyImageSharpFluid_withWebp
+                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                   }
                 }
