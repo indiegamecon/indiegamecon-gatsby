@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
-import { Formik, Field } from 'formik'
-import * as yup from 'yup'
-import { Transition, animated } from 'react-spring/renderprops'
-import { TermsConditions } from './TermsConditions'
-import { StyledForm } from './styledForm'
+import { Field, Formik } from "formik"
+import React, { useState } from "react"
+import { animated, Transition } from "react-spring/renderprops"
+import styled from "styled-components"
+import * as yup from "yup"
+
+import { StyledForm } from "./styledForm"
+import { TermsConditions } from "./TermsConditions"
 
 const GameForm = () => {
   const [formSubmitted, setFormSubmitted] = useState()
@@ -221,4 +223,62 @@ const GameForm = () => {
   )
 }
 
-export default GameForm
+const Button = styled.button`
+  margin: 3rem auto;
+  padding: 1.5rem;
+  display: inherit;
+  width: auto;
+  grid-column: 2 / 3;
+  background: #2b2b2b;
+  border: none;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px #333;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+
+  :active,
+  :hover {
+    background: #555;
+  }
+  :active {
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
+  }
+  :disabled {
+    background-color: #aaa;
+  }
+`
+
+export const GameFormContainer = () => {
+  const [formOpen, setFormOpen] = useState(false)
+
+  const handleToggle = () => {
+    setFormOpen(!formOpen)
+  }
+  return (
+    <>
+      <Button onClick={handleToggle}>Submit Your Game!</Button>
+      <Transition
+        items={formOpen}
+        from={{ opacity: 0 }}
+        enter={{ opacity: 1 }}
+        leave={{ opacity: 0 }}
+      >
+        {toggle =>
+          toggle &&
+          (styles => (
+            <animated.div style={styles}>
+              <GameForm />
+            </animated.div>
+          ))
+        }
+      </Transition>
+    </>
+  )
+}
+
+export default GameFormContainer

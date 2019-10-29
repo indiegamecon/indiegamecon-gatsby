@@ -1,4 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
 import styled from "styled-components"
 
@@ -20,9 +21,10 @@ const SponsorWrapper = styled.div`
 const Sponsors = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: { title: { eq: "Sponsors" } }) {
-        html
+      mdx(frontmatter: { title: { eq: "Sponsors" } }) {
+        body
       }
+
       allAirtable(filter: { table: { eq: "Sponsors" } }) {
         edges {
           node {
@@ -61,7 +63,7 @@ const Sponsors = () => {
           )
         })}
       </SponsorWrapper>
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </Layout>
   )
 }

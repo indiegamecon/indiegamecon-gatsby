@@ -1,20 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react"
+
+import Layout from "../components/layout"
 
 export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
+  data: { mdx }, // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { html } = markdownRemark
   return (
-    <Layout className="blog-post-container">
+    <Layout>
       <div className="blog-post">
-        {/* <h1>{frontmatter.title}</h1> */}
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <MDXRenderer>{mdx.body}</MDXRenderer>
       </div>
     </Layout>
   )
@@ -22,11 +18,10 @@ export default function Template({
 
 export const pageQuery = graphql`
   query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+    mdx(frontmatter: { path: { eq: $path } }) {
+      body
       frontmatter {
         path
-        title
       }
     }
   }
