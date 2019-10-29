@@ -9,8 +9,7 @@
 
 ### Environment set up
 
-1. `yarn` then
-   `yarn global gatsby-cli` for gatsby commandline ease
+1. `yarn`
 1. Airtable setup
 
 ```
