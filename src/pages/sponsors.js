@@ -1,7 +1,9 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import { graphql, StaticQuery } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Sponsors = () => (
   <Layout>
@@ -9,17 +11,17 @@ const Sponsors = () => (
     <StaticQuery
       query={graphql`
         {
-          markdownRemark(frontmatter: { title: { eq: "Sponsors" } }) {
-            html
+          mdx(frontmatter: { title: { eq: "Sponsors" } }) {
+            body
           }
         }
       `}
       render={data => (
         <>
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </>
       )}
-    />{' '}
+    />
   </Layout>
 )
 

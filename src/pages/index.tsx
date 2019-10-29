@@ -1,10 +1,11 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
-import ContactForm from '../components/contactForm'
+import { graphql, StaticQuery } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react"
+import styled from "styled-components"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import ContactForm from "../components/contactForm"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const StyledHome = styled.div`
   p {
@@ -22,17 +23,16 @@ const IndexPage = () => (
     <StaticQuery
       query={graphql`
         {
-          markdownRemark(frontmatter: { title: { eq: "home" } }) {
-            id
-            html
+          mdx(frontmatter: { title: { eq: "home" } }) {
+            body
           }
         }
       `}
       render={data => (
         <>
-          <StyledHome
-            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-          />
+          <StyledHome>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </StyledHome>
         </>
       )}
     />

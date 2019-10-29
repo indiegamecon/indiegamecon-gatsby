@@ -1,8 +1,9 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, StaticQuery } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import React from "react"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const About = () => (
   <Layout>
@@ -10,15 +11,14 @@ const About = () => (
     <StaticQuery
       query={graphql`
         {
-          markdownRemark(frontmatter: { title: { eq: "about" } }) {
-            id
-            html
+          mdx(frontmatter: { title: { eq: "about" } }) {
+            body
           }
         }
       `}
       render={data => (
         <>
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </>
       )}
     />

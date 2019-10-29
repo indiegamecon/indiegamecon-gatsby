@@ -15,6 +15,21 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          'gatsby-remark-bracketed-spans',
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+              sizeByPixelDensity: true,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -64,23 +79,6 @@ module.exports = {
           {
             baseId: `appxzIMSRIukQuB1k`,
             tableName: `Leadership`,
-          },
-        ],
-      },
-    },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          'gatsby-remark-bracketed-spans',
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 900,
-            },
           },
         ],
       },
