@@ -1,16 +1,17 @@
-import React from 'react'
-import 'typeface-bungee'
-import 'typeface-roboto-mono'
+import "typeface-bungee"
+import "typeface-roboto-mono"
 
-import Header from './header'
-import GlobalStyle from './globalStyles'
+import React from "react"
+
+import GlobalStyle from "./globalStyles"
+import Header from "./header"
+
 //import './layout.css'
 
 const Layout: React.FC<{ isHomePage?: boolean }> = ({
   children,
   isHomePage,
 }) => {
-  console.log(isHomePage)
   return (
     <>
       <GlobalStyle />

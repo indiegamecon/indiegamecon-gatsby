@@ -1,14 +1,14 @@
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import React, { Component } from 'react'
-import Navbar from './navbar'
-import IGCLogo from '../images/IGC White Logo Stroke Only.svg'
-import styled, { css } from 'styled-components'
+import { graphql, Link, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import React, { Component } from "react"
+import styled, { css } from "styled-components"
 
-import HamburgerButton from './hamburgerMenu'
-import BitforestSrc from '../images/vectors/bitforestBlack.svg'
-import { Colors } from '../utilities'
-import { Bar } from './bar'
+import IGCLogo from "../images/IGC White Logo Stroke Only.svg"
+import BitforestSrc from "../images/vectors/bitforestBlack.svg"
+import { Colors } from "../utilities"
+import { Bar } from "./bar"
+import HamburgerButton from "./hamburgerMenu"
+import Navbar from "./navbar"
 
 const BitforestLogo = styled(BitforestSrc)`
   margin-right: auto;
@@ -97,7 +97,6 @@ const Header: React.FC<{ isHomePage: boolean }> = ({ isHomePage }) => {
       }
     }
   `)
-  console.log(photo)
   return (
     <>
       <HamburgerButton />

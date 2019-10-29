@@ -71,6 +71,7 @@ module.exports = {
           {
             baseId: `appxzIMSRIukQuB1k`,
             tableName: `Sponsors`,
+            mapping: { logo: `fileNode` },
           },
           {
             baseId: `appxzIMSRIukQuB1k`,
