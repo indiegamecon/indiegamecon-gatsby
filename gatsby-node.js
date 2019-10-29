@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require('path')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -7,9 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
-        limit: 1000
-      ) {
+      allMdx {
         edges {
           node {
             frontmatter {
@@ -24,7 +22,7 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
     // console.log(result.data.allMarkdownRemark.edges)
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMdx.edges.forEach(({ node }) => {
       if (!node.frontmatter.path) return
       createPage({
         path: node.frontmatter.path,
