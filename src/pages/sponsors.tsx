@@ -50,6 +50,8 @@ const Sponsors = () => {
   return (
     <Layout>
       <SEO title="Sponsors" />
+      <h1>A great big thank you to this year's sponsors!</h1>
+
       <SponsorWrapper>
         {data.allAirtable.edges.map(node => {
           const data = node.node.data
