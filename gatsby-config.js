@@ -7,8 +7,10 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Indie Game Con 2019`,
-    description: `Indie Game Con 2019, Eugene Oregon`,
+    description: `Indie Game Con 2019, Eugene OR, Nov 2-3 2019`,
     author: `@mckelveygreg`,
+    url: 'https://www.indiegamecon.com',
+    image: '/IGC_poster.jpg',
   },
   pathPrefix: '/indiegamecon-gatsby', // for gh-pages
   plugins: [

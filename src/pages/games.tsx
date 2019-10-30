@@ -27,7 +27,6 @@ const Games: React.FC = () => {
   const games = data.games.edges
     .filter(({ node }) => node.data.confirmed)
     .map(({ node }) => node.data)
-  console.log(games)
 
   return (
     <Layout>

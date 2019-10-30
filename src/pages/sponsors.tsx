@@ -49,7 +49,6 @@ const Sponsors = () => {
       }
     }
   `)
-  console.log(data)
   return (
     <Layout>
       <SEO title="Sponsors" />
