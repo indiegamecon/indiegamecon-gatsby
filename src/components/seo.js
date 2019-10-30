@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const metaImage = `${site.siteMetadata.url}${site.siteMetadata.image}`
   return (
     <Helmet
       htmlAttributes={{
@@ -70,15 +70,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: metaImage,
         },
         {
           property: `image`,
-          content: site.siteMetadata.image,
+          content: metaImage,
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: metaImage,
         },
         {
           property: 'og:locale',
