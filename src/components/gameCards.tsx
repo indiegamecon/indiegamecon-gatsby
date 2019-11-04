@@ -9,6 +9,8 @@ export interface GameProps {
   gameDescription: string
   teamMembers: string
   confirmed: boolean
+  igcYear: string
+  award: string
 }
 
 const Divider = styled.hr`
@@ -36,10 +38,12 @@ const GameCard: React.FC<GameProps> = ({
   teamName,
   gameDescription,
   teamMembers,
+  igcYear,
+  award
 }) => {
   return (
     <div>
-      <h3>
+      <h4>
         {gameLink ? (
           <a
             href={getValidUrl(gameLink)}
@@ -49,12 +53,14 @@ const GameCard: React.FC<GameProps> = ({
             {gameName}
           </a>
         ) : (
-          { gameName }
+          {gameName}
+        )} 
+        <span>&nbsp;//&nbsp;</span>{igcYear}<span>&nbsp;</span>
+        {award && (
+          <span>Winner: {award}</span>
         )}
-      </h3>
-      <h4 style={{ fontStyle: 'italic' }}>{teamName}</h4>
-      <p>{gameDescription}</p>
-      <p>Team Members: {teamMembers}</p>
+      </h4>
+      <p>Team: {teamName} ({teamMembers})</p>
       <Divider />
     </div>
   )

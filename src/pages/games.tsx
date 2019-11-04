@@ -18,6 +18,8 @@ const Games: React.FC = () => {
               gameName
               gameLink
               confirmed
+              igcYear
+              award
             }
           }
         }
