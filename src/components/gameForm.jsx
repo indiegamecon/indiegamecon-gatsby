@@ -1,11 +1,11 @@
-import { Field, Formik } from "formik"
-import React, { useState } from "react"
-import { animated, Transition } from "react-spring/renderprops"
-import styled from "styled-components"
-import * as yup from "yup"
+import { Field, Formik } from 'formik'
+import React, { useState } from 'react'
+import { animated, Transition } from 'react-spring/renderprops'
+import styled from 'styled-components'
+import * as yup from 'yup'
 
-import { StyledForm } from "./styledForm"
-import { TermsConditions } from "./TermsConditions"
+import { StyledForm } from './styledForm'
+import { TermsConditions } from './TermsConditions'
 
 const GameForm = () => {
   const [formSubmitted, setFormSubmitted] = useState()
@@ -26,6 +26,7 @@ const GameForm = () => {
                   <Formik
                     initialValues={{
                       formName: 'Games',
+                      igcYear: '2020',
                       acceptedTerms: false,
                     }}
                     validationSchema={yup.object().shape({
