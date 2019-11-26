@@ -1,10 +1,26 @@
 const Airtable = require('airtable')
 const axios = require('axios')
 
+const { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, RECAPTCHA_SECRET } = process.env
+
+const validateRecaptcha = async data => {
+  const { recaptcha } = data
+  const secret = RECAPTCHA_SECRET
+  const response = await axios.post(
+    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${recaptcha}`,
+    {}
+  )
+
+  if (!response.data.success) {
+    throw new Error(response.data['error-codes'])
+    return
+  }
+  delete data.recaptcha
+  return response.data
+}
+
 const saveContact = async data => {
   return new Promise((resolve, reject) => {
-    const { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } = process.env
-
     Airtable.configure({
       AIRTABLE_API_KEY,
     })
@@ -49,6 +65,7 @@ const postToSlack = async data => {
 export async function handler(event) {
   try {
     const data = JSON.parse(event.body)
+    await validateRecaptcha(data)
     await saveContact(data)
     await postToSlack(data)
     return {

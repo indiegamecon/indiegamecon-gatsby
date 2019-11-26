@@ -7,6 +7,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 
 import { StyledForm } from './styledForm'
 import { TermsConditions } from './TermsConditions'
+import { Recaptcha, executeCaptcha } from './Recaptcha'
 
 const GameForm = () => {
   const [formSubmitted, setFormSubmitted] = useState()
@@ -72,10 +73,17 @@ const GameForm = () => {
                 console.log(response)
               }}
             >
-              {({ touched, errors, isSubmitting, handleSubmit, isValid }) => (
+              {({
+                touched,
+                errors,
+                isSubmitting,
+                handleSubmit,
+                isValid,
+                setFieldValue,
+              }) => (
                 <StyledForm
-                  onSubmit={handleSubmit}
-                  onSubmitCapture={handleSubmit}
+                  onSubmit={executeCaptcha}
+                  onSubmitCapture={executeCaptcha}
                 >
                   <h3>Contact Registration</h3>
                   <p>
@@ -186,9 +194,12 @@ const GameForm = () => {
                     type="checkbox"
                     className="termsCheckbox"
                   />
-                  <button type="submit" disabled={isSubmitting || !isValid}>
-                    Submit
-                  </button>
+                  <Recaptcha
+                    handleSubmit={handleSubmit}
+                    isSubmitting={isSubmitting}
+                    isValid={isValid}
+                    setFieldValue={setFieldValue}
+                  />
                   <TermsConditions open={termsOpen} setOpen={setTermsOpen} />
                 </StyledForm>
               )}

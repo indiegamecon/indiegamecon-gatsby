@@ -3,8 +3,8 @@ import { Formik, Form, Field } from 'formik'
 
 import * as yup from 'yup'
 import styled from 'styled-components'
-import { Transition, animated } from 'react-spring/renderprops'
-import { useTransition } from 'react-spring'
+import { useTransition, animated } from 'react-spring'
+import { executeCaptcha, Recaptcha } from './Recaptcha'
 
 const StyledForm = styled(Form)`
   display: grid;
@@ -74,7 +74,7 @@ const ContactForm: React.FC = () => {
     <>
       {transitions.map(({ item, key, props }) =>
         !item ? (
-          <animated.div style={props}>
+          <animated.div style={props} key={key}>
             <Formik
               initialValues={{
                 name: '',
@@ -106,10 +106,17 @@ const ContactForm: React.FC = () => {
                 console.log(response)
               }}
             >
-              {({ touched, errors, isSubmitting, handleSubmit, isValid }) => (
+              {({
+                touched,
+                errors,
+                isSubmitting,
+                handleSubmit,
+                isValid,
+                setFieldValue,
+              }) => (
                 <StyledForm
-                  onSubmit={handleSubmit}
-                  onSubmitCapture={handleSubmit}
+                  onSubmit={executeCaptcha}
+                  onSubmitCapture={executeCaptcha}
                 >
                   <label htmlFor="name">Name:</label>
                   <Field
@@ -138,15 +145,18 @@ const ContactForm: React.FC = () => {
                     name="message"
                     required
                   />
-                  <button type="submit" disabled={isSubmitting || !isValid}>
-                    Submit
-                  </button>
+                  <Recaptcha
+                    handleSubmit={handleSubmit}
+                    isSubmitting={isSubmitting}
+                    isValid={isValid}
+                    setFieldValue={setFieldValue}
+                  />
                 </StyledForm>
               )}
             </Formik>
           </animated.div>
         ) : (
-          <animated.h2 style={{ textAlign: 'center', ...props }}>
+          <animated.h2 style={{ textAlign: 'center', ...props }} key={key}>
             Thanks, and talk to you soon!
           </animated.h2>
         )
