@@ -1,11 +1,11 @@
-import { graphql, StaticQuery } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import React from "react"
-import styled from "styled-components"
+import { graphql, StaticQuery } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import React from 'react'
+import styled from 'styled-components'
 
-import ContactForm from "../components/contactForm"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import ContactForm from '../components/contactForm'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const StyledHome = styled.div`
   p {
@@ -36,6 +36,7 @@ const IndexPage = () => (
         </>
       )}
     />
+    <hr />
     <h3>Have questions? Contact us!</h3>
     <ContactForm />
   </Layout>
